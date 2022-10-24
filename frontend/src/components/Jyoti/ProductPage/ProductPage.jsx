@@ -4,7 +4,7 @@ import { AiOutlineStar } from "react-icons/ai";
 
 function ProductPage() {
   return (
-    <Box border="1px solid blue" p="2" width="80%">
+    <Box border="1px solid blue" p="2" width="81%" bg="white" h="300px">
       <HStack>
         <Box>
           <Image
@@ -12,7 +12,7 @@ function ProductPage() {
             w="200px"
           />
         </Box>
-        <VStack>
+        <VStack align="left">
           <Text>
             Adsun Frameless 80 cm (32 inch) HD Ready LED Smart Android Based TV
           </Text>
@@ -27,7 +27,7 @@ function ProductPage() {
           <Text>-HD Ready 1366 x 768 Pixels</Text>
           <Text>-3 years standard manufacturing warranty form admin</Text>
         </VStack>
-        <VStack>
+        <VStack align="left">
           <Text>@ 8900</Text>
           <HStack>
             <Text as="s">29900</Text>

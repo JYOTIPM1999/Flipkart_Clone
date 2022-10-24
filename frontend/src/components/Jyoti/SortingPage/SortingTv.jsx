@@ -3,8 +3,8 @@ import React from "react";
 
 function SortingTv() {
   return (
-    <Box border="1px solid red" p="2">
-      <VStack>
+    <Box border="1px solid red" p="2" width="18%" bg="white">
+      <VStack align="left">
         <Box>
           <Text>Filter</Text>
         </Box>
