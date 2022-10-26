@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { Box, HStack, VStack } from "@chakra-ui/react";
+import { Box, Button, HStack, VStack } from "@chakra-ui/react";
 // import Details from "./components/Utkarsh/Details";
 // import SortingTv from "./components/Jyoti/TVPage/SortingPage/SortingTv";
 // import ProductPage from "./components/Jyoti/TVPage/ProductPage/ProductPage";
@@ -24,6 +24,14 @@ function App() {
         <VStack w={"70%"} border={"1px"} borderColor="gray.300">
           <Addresses />
           <Products />
+          <Products />
+          <Products />
+          <Products />
+          <Products />
+          <Products />
+          <Box p={"15px"}>
+            <Button>PLACE ORDER</Button>
+          </Box>
         </VStack>
         <Box
           w={"30%"}
