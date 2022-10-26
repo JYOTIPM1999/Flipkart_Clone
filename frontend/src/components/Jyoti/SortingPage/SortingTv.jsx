@@ -14,6 +14,8 @@ import {
   Divider,
   Icon,
   Image,
+  Input,
+  Select,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -35,6 +37,23 @@ function SortingTv() {
         <Box>
           <Text fontSize="1rem">PRICE</Text>
           <PriceSlider />
+          <Box display={"flex"} gap="20px" margin={"auto"}>
+            <Select>
+              <option value="">Min</option>
+              <option value="">₹15,000</option>
+              <option value="">₹25,000</option>
+              <option value="">₹35,000</option>
+              <option value="">₹50,000</option>
+            </Select>
+            to
+            <Select>
+              <option value="">₹15,000</option>
+              <option value="">₹25,000</option>
+              <option value="">₹35,000</option>
+              <option value="">₹50,000</option>
+              <option value="">₹80,000</option>
+            </Select>
+          </Box>
         </Box>
         <Box display={"flex"}>
           <Checkbox ml={"1rem"}>
@@ -129,10 +148,10 @@ function SortingTv() {
         <Box>
           <AccordionSort
             name={"OFFERS"}
-            samsung={"samsung"}
-            LG={"LG"}
-            MI={"MI"}
-            Realme={"Real me"}
+            samsung={"10% off"}
+            LG={"20% off"}
+            MI={"30% off"}
+            Realme={"50% off"}
           />
         </Box>
         <Box>

@@ -9,8 +9,10 @@ export const PriceSlider = () => {
   return (
     <RangeSlider
       aria-label={["min", "max"]}
+      min={0}
+      max={80000}
       colorScheme="blue"
-      defaultValue={[0, 10000]}
+      defaultValue={[0, 15000]}
     >
       <RangeSliderTrack>
         <RangeSliderFilledTrack />
