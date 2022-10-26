@@ -28,7 +28,9 @@ import {
   useToast,
   VStack,
 } from "@chakra-ui/react";
+
 import { StarIcon, InfoOutlineIcon, ChevronRightIcon } from "@chakra-ui/icons";
+
 import React from "react";
 import { useState } from "react";
 import styles from "./styles_u.module.css";
@@ -40,17 +42,10 @@ import { MdLocalOffer } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 import Rating from "./Rating&Review";
 import Review from "./Review";
-{/* <iframe
-  width="1366"
-  height="657"
-  src="https://www.youtube.com/embed/lT9Ta_cAMR8"
-  title="Lifestyle Vlogging with Canon EOS M50Mark II by our EOS Influencer Sharmila Patil"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-></iframe>; */}
+
+
 const spec = [
-  {head:"General",msg:""},
+
   { head: "Brand", msg: "Canon" },
   { head: "Model Number", msg: "1500D" },
   { head: "Series", msg: "EOS" },
@@ -60,7 +55,10 @@ const spec = [
 ];
 const images = [
   { name: "dslr1.png", type: "img", width: "95%" },
+
   { name: "https://www.youtube.com/embed/lT9Ta_cAMR8",title:"LifeStyle Vloggin with Canon EOS MF0Mark II by our EOS Influencer Shrmila Patil", type: "vid" },
+
+
   { name: "dslr2.png", type: "img", width: "95%" },
   { name: "dslr3.png", type: "img", width: "70%" },
   { name: "dslr4.png", type: "img", width: "95%" },
@@ -154,6 +152,7 @@ const Details = () => {
           <Box p={"10px"} className={styles.largephoto}>
             {vid && (
               <AspectRatio mb={"10px"} W="95%" h={"400px"} ratio={1}>
+
                 <iframe
                  src={img.name}
                  title={img.type}
@@ -161,6 +160,7 @@ const Details = () => {
                  
 
                   />
+
               </AspectRatio>
             )}
 
@@ -204,13 +204,20 @@ const Details = () => {
         {/* details */}
         <Box className={styles.details_u}>
           <VStack
+
             spacing={"17px"}
+
+
             p={"5px"}
             align={"Left"}
             border={"1px"}
             borderColor={"gray.200"}
           >
+
             <Breadcrumb fontSize={"13px"} separator={<ChevronRightIcon/>} color={"gray.500"}>
+
+           
+
               <BreadcrumbItem>
                 <BreadcrumbLink href="#">Home</BreadcrumbLink>
               </BreadcrumbItem>
@@ -312,7 +319,11 @@ const Details = () => {
             {spec.map((elem, i) => (
               <HStack key={i}>
                 <Box w={200} border="1px" borderColor="white">
+
                   <Heading fontWeight={500} color={elem.msg?"gray.500":"black"} fontSize={elem.msg?"14px":"18px"}>
+
+                  
+
                     {elem.head}
                   </Heading>
                 </Box>
@@ -337,7 +348,7 @@ const Details = () => {
             <Review />
             <Review />
             <Review />
-           
+
           </Box>
         </Box>
       </Box>
