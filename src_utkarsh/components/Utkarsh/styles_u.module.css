@@ -54,11 +54,7 @@
   position:absolute;
   width: 40px;
   height: 40px;
-
-  /* background-color: white; */
-
- 
-
+  background-color: white;
   top: 10px;
   right:10px;
   border: none;
