@@ -1,53 +1,148 @@
+import {
+  // Accordion,
+  // AccordionButton,
+  // AccordionIcon,
+  // AccordionItem,
+  // AccordionPanel,
+  // RangeSlider,
+  // RangeSliderFilledTrack,
+  // RangeSliderThumb,
+  // RangeSliderTrack,
+  // Checkbox,
+  Box,
+  Checkbox,
+  Divider,
+  Icon,
+  Image,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
-import RangeSlider from "../Slider/Slider";
-import { Box, Stack, Typography } from "@mui/material";
+import { AccordionSort } from "../AccodionSort/AccordionSort";
+import { PriceSlider } from "../PriceSlider/PriceSlider";
 
 function SortingTv() {
   return (
-    <Box border="1px solid red" p="2" width="100%" bg="white">
+    <Box border="1px" borderColor={"gray.300"} p="2" width="100%" bg="white">
       <Stack>
         <Box>
-          <Typography fontSize="1rem">Filter</Typography>
-          {/* <RangeSlider /> */}
+          <Text fontSize="1rem">Filter</Text>
         </Box>
         <Box>
-          <Typography fontSize="1rem">Category</Typography>
+          <Text fontSize="1rem">Category</Text>
+        </Box>
+        <Divider />
+        <Box>
+          <Text fontSize="1rem">PRICE</Text>
+          <PriceSlider />
+        </Box>
+        <Box display={"flex"}>
+          <Checkbox ml={"1rem"}>
+            <Image
+              w={"80px"}
+              src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
+            />
+          </Checkbox>
+          <Icon ml={"40%"} />
         </Box>
         <Box>
-          <Typography fontSize="1rem">PRICE</Typography>
+          <AccordionSort
+            name={"BRAND"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
         <Box>
-          <Typography fontSize="1rem">BRAND</Typography>
+          <AccordionSort
+            name={"SCREEN SIZE"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
         <Box>
-          <Typography fontSize="1rem">SCREEN SIZE</Typography>
+          <AccordionSort
+            name={"IDEAL FOR VIEWING DISTANCE"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
         <Box>
-          <Typography fontSize="1rem">IDEAL FOR VIEWING DISTANCE</Typography>
+          <AccordionSort
+            name={"RESOLUTION"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
         <Box>
-          <Typography fontSize="1rem">RESOLUTION</Typography>
+          <AccordionSort
+            name={"SCREEN TYPE"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
         <Box>
-          <Typography fontSize="1rem">SCREEN TYPE</Typography>
+          <AccordionSort
+            name={"OPERATING SYSTEM"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
         <Box>
-          <Typography fontSize="1rem">SMART TV</Typography>
+          <AccordionSort
+            name={"CONNECTIVITY FEATURES"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
         <Box>
-          <Typography fontSize="1rem">OPERATING SYSTEM</Typography>
+          <AccordionSort
+            name={"NO OF USB PORTS"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
         <Box>
-          <Typography fontSize="1rem">CONNECTIVITY FEATURE</Typography>
+          <AccordionSort
+            name={"CUSTOMER RATINGS"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
         <Box>
-          <Typography fontSize="1rem">CUSTOMER RATINGS</Typography>
+          <AccordionSort
+            name={"OFFERS"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
         <Box>
-          <Typography fontSize="1rem">OFFERS</Typography>
-        </Box>
-        <Box>
-          <Typography fontSize="1rem">THEME</Typography>
+          <AccordionSort
+            name={"THEME"}
+            samsung={"samsung"}
+            LG={"LG"}
+            MI={"MI"}
+            Realme={"Real me"}
+          />
         </Box>
       </Stack>
     </Box>

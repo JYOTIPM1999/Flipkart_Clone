@@ -1,100 +1,111 @@
-import Box from "@mui/material/Box";
+import {
+  Box,
+  Image,
+  Text,
+  Stack,
+  HStack,
+  VStack,
+  Divider,
+  useToast,
+  Checkbox,
+  UnorderedList,
+  ListItem,
+} from "@chakra-ui/react";
 import styles from "./ProductPage.module.css";
-import { Stack } from "@mui/system";
-import Typography from "@mui/material/Typography";
 import React from "react";
-import Button from "@mui/material/Button";
 import { AiFillStar } from "react-icons/ai";
-// import FavoriteIcon from "@mui/icons-material/Favorite";
 import { BsFillHeartFill } from "react-icons/bs";
 import { useState } from "react";
 
 function ProductPage() {
-  const [wishlist, setWishlist] = useState(true);
+  const [wishlist, setWishlist] = useState(false);
 
+  const toast = useToast();
   const handleClick = () => {
     setWishlist(!wishlist);
+    toast({
+      title: wishlist ? "Bach gye behnchd" : "Gaand marao",
+      status: wishlist ? "error" : "success",
+      duration: 1000,
+      isClosable: true,
+    });
   };
   return (
     <>
       <Box
-        // border="1px solid gray"
-        height="270px"
+        border="1px "
+        borderColor={"gray.300"}
+        h="270px"
         display="flex"
         gap={"10px"}
-        paddingTop="20px"
+        padding={"20px 20px "}
       >
-        <Box width={"20%"}>
-          <Box marginLeft={"90%"} onClick={handleClick} marginBottom="10px">
+        <Box w={"20%"}>
+          <Box ml={"90%"} onClick={handleClick} mb="10px">
             <BsFillHeartFill
               color={wishlist ? "red" : "gray"}
               cursor="pointer"
             />
           </Box>
-          <Box align="center" margin={"auto"}>
-            <img
+          <Box alignItems="center" m={"auto"}>
+            <Image
               src="https://rukminim1.flixcart.com/image/312/312/kzn17680/television/o/q/p/a-3210s-f-adsun-original-imagbhqzhafpzhyz.jpeg?q=70"
-              width="80%"
+              w="80%"
             />
           </Box>
-          <h3>Add to compare</h3>
+          <Checkbox mt={"40px"}>Add to compare</Checkbox>
         </Box>
 
-        <Stack width={"50%"}>
-          <Typography fontSize={"18px"} fontWeight="600">
+        <Stack w={"50%"}>
+          <Text fontSize={"lg"} fontWeight="600">
             Adsun Frameless 80 cm (32 inch) HD Ready LED Smart Android Based TV
-          </Typography>
-          <Stack direction="row" spacing={1} alignItems="center">
+          </Text>
+          <HStack spacing={1} alignItems="center">
             <Box className={styles.stardiv}>
               3.8 <AiFillStar />
             </Box>
-            <Typography fontSize={"14px"} color="gray">
+            <Text fontSize={"14px"} color="gray" fontWeight={"500"}>
               10000 Ratings &
-            </Typography>
-            <Typography fontSize={"14px"} color="gray">
+            </Text>
+            <Text fontSize={"14px"} color="gray" fontWeight={"500"}>
               2500 Reviews
-            </Typography>
-          </Stack>
-          <ul>
-            <li>Operating System: Android Based</li>
-            <li>HD ready 1366 x 768 Pixels</li>
-            <li>3 Years Standard Manufaturer warranty</li>
-          </ul>
+            </Text>
+          </HStack>
+          <VStack align={""}>
+            <UnorderedList fontSize={"14px"}>
+              <ListItem>Operating System: Android Based</ListItem>
+              <ListItem>HD ready 1366 x 768 Pixels</ListItem>
+              <ListItem>3 Years Standard Manufaturer warranty</ListItem>
+            </UnorderedList>
+          </VStack>
         </Stack>
 
         <Stack width={"30%"}>
-          <Stack direction="row" alignItems="center" gap={"40px"}>
-            <Typography variant="h5" fontWeight={"bold"}>
+          <HStack alignItems="center" gap={"40px"}>
+            <Text fontSize={"2xl"} fontWeight="medium">
               ₹8,900
-            </Typography>
-            <img
+            </Text>
+            <Image
               src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
-              width="80px"
-              height="20px"
+              w="80px"
+              h="20px"
             />
-          </Stack>
-          <Stack direction="row" gap="10px">
-            <Typography fontSize={"14px"} color="gray" as="s">
-              ₹29900{" "}
-            </Typography>
-            <Typography
-              fontSize={"14px"}
-              color="rgb(38, 165, 65)"
-              fontWeight={"600"}
-            >
+          </HStack>
+          <HStack gap="10px">
+            <Text fontSize={"16px"} color="gray" as="s">
+              ₹29900
+            </Text>
+            <Text fontSize={"16px"} color="rgb(38, 165, 65)" fontWeight={"600"}>
               70% off
-            </Typography>
-          </Stack>
-          <Typography fontSize={"12px"}>Free delivery</Typography>
-          <Typography
-            fontSize={"16px"}
-            color="rgb(38, 165, 65)"
-            fontWeight={"bold"}
-          >
+            </Text>
+          </HStack>
+          <Text fontSize={"12px"}>Free delivery</Text>
+          <Text fontSize={"14px"} color="rgb(38, 165, 65)" fontWeight={"bold"}>
             Bank Offer
-          </Typography>
+          </Text>
         </Stack>
       </Box>
+      <Divider />
     </>
   );
 }
