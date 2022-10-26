@@ -24,7 +24,9 @@ function ProductPage() {
   const handleClick = () => {
     setWishlist(!wishlist);
     toast({
-      title: wishlist ? "Bach gye behnchd" : "Gaand marao",
+      title: wishlist
+        ? "Item removed from the wishlist"
+        : "Item added to the cart",
       status: wishlist ? "error" : "success",
       duration: 1000,
       isClosable: true,

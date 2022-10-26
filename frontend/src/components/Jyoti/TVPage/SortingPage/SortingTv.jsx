@@ -37,23 +37,6 @@ function SortingTv() {
         <Box>
           <Text fontSize="1rem">PRICE</Text>
           <PriceSlider />
-          {/* <Box display={"flex"} gap="20px" margin={"auto"}>
-            <Select>
-              <option value="">Min</option>
-              <option value="">₹15,000</option>
-              <option value="">₹25,000</option>
-              <option value="">₹35,000</option>
-              <option value="">₹50,000</option>
-            </Select>
-            to
-            <Select>
-              <option value="">₹25,000</option>
-              <option value="">₹35,000</option>
-              <option value="">₹50,000</option>
-              <option value="">₹60,000</option>
-              <option value="">₹75,000</option>
-            </Select>
-          </Box> */}
         </Box>
         <Box display={"flex"}>
           <Checkbox ml={"1rem"}>
