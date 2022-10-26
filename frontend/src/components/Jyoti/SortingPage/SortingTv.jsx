@@ -1,55 +1,55 @@
-import { Box, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import RangeSlider from "../Slider/Slider";
+import { Box, Stack, Typography } from "@mui/material";
 
 function SortingTv() {
   return (
     <Box border="1px solid red" p="2" width="100%" bg="white">
-      <VStack align="left">
+      <Stack>
         <Box>
-          <Text>Filter</Text>
+          <Typography fontSize="1rem">Filter</Typography>
           {/* <RangeSlider /> */}
         </Box>
         <Box>
-          <Text>Category</Text>
+          <Typography fontSize="1rem">Category</Typography>
         </Box>
         <Box>
-          <Text>PRICE</Text>
+          <Typography fontSize="1rem">PRICE</Typography>
         </Box>
         <Box>
-          <Text>BRAND</Text>
+          <Typography fontSize="1rem">BRAND</Typography>
         </Box>
         <Box>
-          <Text>SCREEN SIZE</Text>
+          <Typography fontSize="1rem">SCREEN SIZE</Typography>
         </Box>
         <Box>
-          <Text>IDEAL FOR VIEWING DISTANCE</Text>
+          <Typography fontSize="1rem">IDEAL FOR VIEWING DISTANCE</Typography>
         </Box>
         <Box>
-          <Text>RESOLUTION</Text>
+          <Typography fontSize="1rem">RESOLUTION</Typography>
         </Box>
         <Box>
-          <Text>SCREEN TYPE</Text>
+          <Typography fontSize="1rem">SCREEN TYPE</Typography>
         </Box>
         <Box>
-          <Text>SMART TV</Text>
+          <Typography fontSize="1rem">SMART TV</Typography>
         </Box>
         <Box>
-          <Text>OPERATING SYSTEM</Text>
+          <Typography fontSize="1rem">OPERATING SYSTEM</Typography>
         </Box>
         <Box>
-          <Text>CONNECTIVITY FEATURE</Text>
+          <Typography fontSize="1rem">CONNECTIVITY FEATURE</Typography>
         </Box>
         <Box>
-          <Text>CUSTOMER RATINGS</Text>
+          <Typography fontSize="1rem">CUSTOMER RATINGS</Typography>
         </Box>
         <Box>
-          <Text>OFFERS</Text>
+          <Typography fontSize="1rem">OFFERS</Typography>
         </Box>
         <Box>
-          <Text>THEME</Text>
+          <Typography fontSize="1rem">THEME</Typography>
         </Box>
-      </VStack>
+      </Stack>
     </Box>
   );
 }
