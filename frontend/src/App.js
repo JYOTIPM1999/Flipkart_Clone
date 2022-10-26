@@ -1,14 +1,15 @@
 import { Box } from "@chakra-ui/react";
 import "./App.css";
-import { Breadcrumbs } from "./components/jyoti/Breadcrums/BreadCrumbs";
-import ProductPage from "./components/jyoti/ProductPage/ProductPage";
-import SortingTv from "./components/jyoti/SortingPage/SortingTv";
+
+import { Breadcrumbs } from "./components/Jyoti/Breadcrums/BreadCrumbs";
+import ProductPage from "./components/Jyoti/ProductPage/ProductPage";
+import SortingTv from "./components/Jyoti/SortingPage/SortingTv";
 import Details from "./components/Utkarsh/Details";
 
 function App() {
   return (
     <>
-    {/* <Box m="10px" display="flex" gap="1%">
+    <Box m="10px" display="flex" gap="1%">
       <Box w="18%">
         <SortingTv />
       </Box>
@@ -28,8 +29,8 @@ function App() {
 
         <ProductPage />
       </Box>
-    </Box> */}
-    <Details/>
+    </Box>
+    {/* <Details/> */}
     </>
   );
 }
