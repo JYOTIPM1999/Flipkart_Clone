@@ -1,36 +1,41 @@
-import { Box } from "@chakra-ui/react";
 import "./App.css";
-import { Breadcrumbs } from "./components/Jyoti/TVPage/Breadcrums/BreadCrumbs";
-import ProductPage from "./components/Jyoti/TVPage/ProductPage/ProductPage";
-import SortingTv from "./components/Jyoti/TVPage/SortingPage/SortingTv";
-import Details from "./components/Utkarsh/Details";
+
+import { Box, HStack, VStack } from "@chakra-ui/react";
+// import Details from "./components/Utkarsh/Details";
+// import SortingTv from "./components/Jyoti/TVPage/SortingPage/SortingTv";
+// import ProductPage from "./components/Jyoti/TVPage/ProductPage/ProductPage";
+// import { Breadcrumbs } from "./components/Jyoti/TVPage/Breadcrums/BreadCrumbs";
+import { Addresses } from "./components/Jyoti/CartPage/Addresses/Addresses";
+import { PriceDetails } from "./components/Jyoti/CartPage/PriceDetails/PriceDetails";
+import { Products } from "./components/Jyoti/CartPage/Products/Products";
 
 function App() {
   return (
     <>
-      <Box m="10px" display="flex" gap="1%">
-        <Box w="18%">
-          <SortingTv />
-        </Box>
+      <Box
+        border={"1px"}
+        borderColor="red.300"
+        display={"flex"}
+        m="auto"
+        padding="10px"
+        w={"81%"}
+        gap="15px"
+      >
+        <VStack w={"70%"} border={"1px"} borderColor="gray.300">
+          <Addresses />
+          <Products />
+        </VStack>
         <Box
-          w="81%"
-          backgroundColor={"offwhite"}
-          padding="10px"
-          border={"1px"}
-          borderColor={"gray.300"}
+          w={"30%"}
+          // border={"1px"}
+          // borderColor="gray.400"
+          h="340px"
+          p={"10px 20px"}
+          backgroundColor="gray.100"
         >
-          <Breadcrumbs />
-          <ProductPage />
-          <ProductPage />
-          <ProductPage />
-          <ProductPage />
+          <PriceDetails />
         </Box>
       </Box>
-      <Details />
-      {/* const  [display, setDisplay] = useState(true)
-      <Box display={display ? "flex" : "gird"}>
-        {display && <Text>About</Text>}
-      </Box> */}
     </>
   );
 }
