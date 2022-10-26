@@ -1,11 +1,12 @@
 import { Box, Flex, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineStar } from "react-icons/ai";
+import SortingTv from "../SortingPage/SortingTv";
 
 function ProductPage() {
   return (
     <>
-      <Box border="1px solid blue" p="2" width="81%" bg="white" h="300px">
+      <Box border="1px solid blue" p="2" width="100%" bg="white" h="300px">
         <HStack>
           <Box>
             <Image

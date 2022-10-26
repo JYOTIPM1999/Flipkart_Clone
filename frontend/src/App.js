@@ -5,10 +5,17 @@ import SortingTv from "./components/Jyoti/SortingPage/SortingTv";
 
 function App() {
   return (
-    <Flex gap="10px" margin="auto" width="99%">
-      <SortingTv />
-      <ProductPage />
-    </Flex>
+    <Box border="1px solid green" m="10px" display="flex" gap="10px">
+      <Box width="30%">
+        <SortingTv />
+      </Box>
+      <Box width="70%">
+        <ProductPage />
+        <ProductPage />
+        <ProductPage />
+        <ProductPage />
+      </Box>
+    </Box>
   );
 }
 

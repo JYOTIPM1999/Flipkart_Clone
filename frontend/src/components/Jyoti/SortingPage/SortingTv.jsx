@@ -1,12 +1,14 @@
 import { Box, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import RangeSlider from "../Slider/Slider";
 
 function SortingTv() {
   return (
-    <Box border="1px solid red" p="2" width="18%" bg="white">
+    <Box border="1px solid red" p="2" width="100%" bg="white">
       <VStack align="left">
         <Box>
           <Text>Filter</Text>
+          {/* <RangeSlider /> */}
         </Box>
         <Box>
           <Text>Category</Text>
