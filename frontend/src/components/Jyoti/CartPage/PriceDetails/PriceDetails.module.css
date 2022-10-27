@@ -1,0 +1,8 @@
+.boxFlex {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  /* width: 100%; */
+  align-items: center;
+}
