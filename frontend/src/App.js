@@ -20,8 +20,15 @@ function App() {
         padding="10px"
         w={"81%"}
         gap="15px"
+        position={"relative"}
+        top={"5px"}
       >
-        <VStack w={"70%"} border={"1px"} borderColor="green.300" spacing={3}>
+        <VStack
+          w={"70%"}
+          spacing={3}
+          borderRight={"1px"}
+          borderColor={"gray.300"}
+        >
           <Addresses />
           <Products />
           <Products />
@@ -35,11 +42,13 @@ function App() {
         </VStack>
         <Box
           w={"30%"}
-          // border={"1px"}
-          // borderColor="gray.400"
+          border={"1px"}
+          borderColor="gray.400"
           h="340px"
           p={"10px 20px"}
-          backgroundColor="gray.100"
+          boxShadow="dark-lg"
+          top={"0px"}
+          position={"sticky"}
         >
           <PriceDetails />
         </Box>
