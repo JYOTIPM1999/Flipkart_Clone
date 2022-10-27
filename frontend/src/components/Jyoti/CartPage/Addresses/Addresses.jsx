@@ -9,6 +9,7 @@ export const Addresses = () => {
         w="100%"
         p={"10px"}
         // backgroundColor="gray.100"
+        border="1px"
       >
         <Stack>
           <Text fontSize={"sm"}>

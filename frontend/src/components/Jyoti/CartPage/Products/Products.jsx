@@ -1,13 +1,6 @@
-import {
-  Box,
-  HStack,
-  Icon,
-  Image,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import { InfoIcon } from "@chakra-ui/icons";
 
 export const Products = () => {
   return (
@@ -25,23 +18,53 @@ export const Products = () => {
             alt="samsung"
           />
         </Box>
-        <VStack w="55%" border={"1px"}>
-          <Text>Infinix HOT 12 Play (Champagne Gold, 64GB)</Text>
-          <Text>4 GB RAM</Text>
-          <Text>Seller:Flashstar Commerce</Text>
-          <HStack>
-            <Text>₹11,999</Text>
-            <Text>₹8,399</Text>
-            <Text>30% Off</Text>
-            <Text>
-              1 offer applied <Icon />
+        <VStack
+          w="50%"
+          border={"1px"}
+          alignItems="flex-start"
+          lineHeight={"15px"}
+          padding="10px"
+          boxSizing="border-box"
+        >
+          <Text fontWeight={"400"}>
+            Infinix HOT 12 Play (Champagne Gold, 64GB)
+          </Text>
+          <Text color={"gray.500"} fontWeight="400" fontSize="14px">
+            4 GB RAM
+          </Text>
+          <Text paddingTop={"10px"}>Seller: Flashstar Commerce</Text>
+          <HStack paddingTop={"20px"}>
+            <Text as={"s"} fontWeight="300" color={"gray.600"}>
+              ₹11,999
+            </Text>
+            <Text fontSize={"18px"} fontWeight={"600"}>
+              ₹8,399
+            </Text>
+            <Text fontWeight={"600"} color={"#388e3c"}>
+              30% Off
+            </Text>
+            <Text fontWeight={"600"} color={"#388e3c"}>
+              1 offer applied <InfoIcon color={"#388e3c"} />
             </Text>
           </HStack>
-          <Text>+ ₹29 Secured Packaging Fee</Text>
+          <Text fontSize={"sm"} fontWeight={"500"}>
+            + ₹29 Secured Packaging Fee
+          </Text>
         </VStack>
-        <Text border={"1px"} w={"30%"}>
-          Delivered by Sun Oct 30 | Free ₹40
-        </Text>
+        <Box
+          display={"flex"}
+          border={"1px"}
+          w={"35%"}
+          fontSize={"14px"}
+          fontWeight={"500"}
+          padding="10px"
+          gap={"5px"}
+        >
+          <Text>Delivered by</Text>
+          <Text>Sun Oct 30 |</Text>
+          <Text>Free</Text>
+          <Text>₹40</Text>
+        </Box>
       </Box>
     </>
   );
