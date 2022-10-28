@@ -1,18 +1,31 @@
+import axios from "axios";
 import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
+  Alert,
+  AlertDescription,
+  AlertIcon,
+  AlertTitle,
   AspectRatio,
   Box,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   Button,
+  CloseButton,
   Divider,
   Heading,
   HStack,
   Image,
+  Img,
   Input,
   ListItem,
   Text,
   UnorderedList,
+  useDisclosure,
   useToast,
   VStack,
 } from "@chakra-ui/react";
@@ -30,6 +43,7 @@ import { MdLocalOffer } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 import Rating from "./Rating&Review";
 import Review from "./Review";
+import { useEffect } from "react";
 
 const spec = [
   { head: "Brand", msg: "Canon" },
@@ -105,14 +119,19 @@ const Details = () => {
   };
 
   const handleChange = (elem) => {
-    if (elem.type === "img") {
+    if (elem.type == "img") {
       setVid(false);
-    } else if (elem.type === "vid") {
+    } else if (elem.type == "vid") {
       setVid(true);
     }
     setImg(elem);
   };
 
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:8080/").then((res) => setData(res.data[2]));
+  });
+  // console.log(data.imglink)
   return (
     <>
       <Box className={styles.container_u}>
@@ -131,7 +150,7 @@ const Details = () => {
                   m={"auto"}
                   mb={"10px"}
                   w={"50px"}
-                  src={elem.type === "img" ? elem.name : "playbutton.jpg"}
+                  src={elem.type == "img" ? elem.name : "playbutton.jpg"}
                 ></Image>
               </Box>
             ))}
@@ -248,8 +267,8 @@ const Details = () => {
             <Text fontWeight={500} fontSize={"15px"}>
               Available offers
             </Text>
-            {offer.map((elem) => (
-              <HStack>
+            {offer.map((elem, i) => (
+              <HStack key={i}>
                 <MdLocalOffer color="green" />
                 <Text fontSize={"14px"} noOfLines={1}>
                   <span style={{ fontWeight: "500" }}>{elem.type}</span>
