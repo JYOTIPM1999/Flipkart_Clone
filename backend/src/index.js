@@ -9,6 +9,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 app.use(compression());
+// app.use("/wishlist", WishList);
 
 app.get("/", async (req, res) => {
   let Tv = await TvModel.find();
