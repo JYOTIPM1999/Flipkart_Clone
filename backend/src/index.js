@@ -1,21 +1,34 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors");
+const TvModel = require("./Schema/tv.model");
 const WishList = require("./Routes/Wishlist.router");
 const compression = require("compression");
-
-const TvModel = require("./Schema/tv.model");
-
 const app = express();
+const cors = require("cors");
 
 app.use(express.json());
-app.use(cors)
+app.use(cors());
 app.use(compression());
-app.use("/wishlist", WishList);
+// app.use("/wishlist", WishList);
 
-// app.get("/", (req, res) => res.send("hello express"));
-
-app.listen(8080, async () => {
-  await mongoose.connect("mongodb://127.0.0.1:27017/Flipkart");
-  console.log("you sever started on http://localhost:8080");
+app.get("/", async (req, res) => {
+  let Tv = await TvModel.find();
+  res.send(Tv);
 });
+
+app.post("/:id", async (req, res) => {
+  const { id } = req.params;
+
+  let Update = await TvModel.updateOne(
+    { _id: mongoose.Types.ObjectId(id) },
+    { $set: { wish: req.body.wishlist } }
+  );
+  res.send(Update);
+});
+
+mongoose.connect("mongodb://127.0.0.1:27017/Flipkart").then(() => {
+  app.listen(8080, () => {
+    console.log("server started on port 8080");
+  });
+});
+

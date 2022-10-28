@@ -66,7 +66,7 @@ const Rating = () => {
               }
 
               return (
-                <HStack>
+                <HStack key={i}>
                   <Text fontSize={"13px"}>
                     {`${i + 1} `}
                     <StarIcon w="10px" />

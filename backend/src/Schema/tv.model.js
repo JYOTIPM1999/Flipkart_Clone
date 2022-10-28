@@ -1,17 +1,15 @@
 const mongoose = require("mongoose");
 
 
-
 const userSchema = new mongoose.Schema({
-    name:{type: String , required:true},           
-    rating: {type: Number},
-    price: {type: String , required:true, unique: true},  
-    imglink: {tyle:String}
-   
-})
+  id: { type: Number },
+  name: { type: String },
+  rating: { type: Number },
+  price: { type: String },
+  imglink: { type: String },
+  wish: { type: Boolean },
+});
 
-
-const TvModel = mongoose.model("tv", userSchema);  
+const TvModel = mongoose.model("tv", userSchema);
 module.exports = TvModel;
-
 
