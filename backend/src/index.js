@@ -1,10 +1,9 @@
-
-
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const WishList = require("./Routes/Wishlist.router");
 const compression = require("compression");
+const SignUpRouter = require("./Routes/Signup.router");
 
 const TvModel = require("./Schema/tv.model");
 
@@ -13,7 +12,8 @@ app.use(express.json());
 
 app.use(cors());
 app.use(compression());
-// app.use("/wishlist", WishList);
+app.use("/signUp", SignUpRouter);
+app.use("/wishlist", WishList);
 
 app.get("/", async (req, res) => {
   let tv = await TvModel.find();
@@ -22,7 +22,6 @@ app.get("/", async (req, res) => {
 
 app.post("/:id", async (req, res) => {
   const { id } = req.params;
-
   let update = await TvModel.updateOne(
     { _id: mongoose.Types.ObjectId(id) },
     { $set: { wish: req.body.wishlist } }
