@@ -17,8 +17,10 @@ import React, { useEffect } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { BsFillHeartFill } from "react-icons/bs";
 import { useState } from "react";
+import axios from "axios";
 
 function ProductPage() {
+<<<<<<< HEAD
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -26,6 +28,14 @@ function ProductPage() {
   }, []);
 
   const toast = useToast();
+=======
+  const toast = useToast();
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:8080/").then((res) => setData(res.data));
+  }, []);
+>>>>>>> f5fd0a16229ec7fe3e642d35694b6444c83ea910
 
   const handleClick = (id, wish) => {
     axios.post(`http://localhost:8080/${id}`, { wishlist: !wish }).then((res) =>
@@ -33,6 +43,10 @@ function ProductPage() {
         setData(res.data);
       })
     );
+<<<<<<< HEAD
+=======
+
+>>>>>>> f5fd0a16229ec7fe3e642d35694b6444c83ea910
     toast({
       title: wish ? "Item removed from the wishlist" : "Item added to the cart",
       status: wish ? "error" : "success",
@@ -126,8 +140,15 @@ function ProductPage() {
             </Text>
           </Stack>
         </Box>
+<<<<<<< HEAD
       ))}
       <Divider />
+=======
+        // <Divider />
+
+        ////
+      ))}
+>>>>>>> f5fd0a16229ec7fe3e642d35694b6444c83ea910
     </>
   );
 }
