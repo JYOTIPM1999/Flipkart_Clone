@@ -113,25 +113,3 @@ function ProductPage() {
 }
 
 export default ProductPage;
-
-//its going to append in app.js
-{
-  /* <Box m="10px" display="flex" gap="1%">
-  <Box w="18%">
-    <SortingTv />
-  </Box>
-  <Box
-    w="81%"
-    backgroundColor={"offwhite"}
-    padding="10px"
-    border={"1px"}
-    borderColor={"gray.300"}
-  >
-    <Breadcrumbs />
-    <ProductPage />
-    <ProductPage />
-    <ProductPage />
-    <ProductPage />
-  </Box>
-</Box>; */
-}

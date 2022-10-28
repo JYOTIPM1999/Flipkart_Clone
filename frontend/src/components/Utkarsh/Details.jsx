@@ -1,30 +1,18 @@
 import {
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
-  Alert,
-  AlertDescription,
-  AlertIcon,
-  AlertTitle,
   AspectRatio,
   Box,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   Button,
-  CloseButton,
   Divider,
   Heading,
   HStack,
   Image,
-  Img,
   Input,
   ListItem,
   Text,
   UnorderedList,
-  useDisclosure,
   useToast,
   VStack,
 } from "@chakra-ui/react";
@@ -117,9 +105,9 @@ const Details = () => {
   };
 
   const handleChange = (elem) => {
-    if (elem.type == "img") {
+    if (elem.type === "img") {
       setVid(false);
-    } else if (elem.type == "vid") {
+    } else if (elem.type === "vid") {
       setVid(true);
     }
     setImg(elem);
@@ -143,7 +131,7 @@ const Details = () => {
                   m={"auto"}
                   mb={"10px"}
                   w={"50px"}
-                  src={elem.type == "img" ? elem.name : "playbutton.jpg"}
+                  src={elem.type === "img" ? elem.name : "playbutton.jpg"}
                 ></Image>
               </Box>
             ))}
