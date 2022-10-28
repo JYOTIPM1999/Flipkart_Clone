@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 const userSchema = new mongoose.Schema({
   id: { type: Number },
   name: { type: String },
@@ -11,3 +12,4 @@ const userSchema = new mongoose.Schema({
 
 const TvModel = mongoose.model("tv", userSchema);
 module.exports = TvModel;
+
