@@ -1,73 +1,19 @@
 [
   {
+    "id":1,
     "name": "realme 80 cm (32 inch) HD Ready LED Smart Android TV  (TV 32)",
     "rating": "4.4",
-    "price": 13999,
+    "price": "13999",
     "imglink": "https://rukminim1.flixcart.com/image/312/312/xif0q/television/h/a/r/-original-imaghgphdj9fsvzt.jpeg?q=70",
     "wish": false
   },
   {
+    "id":2,
     "name": "Infinix Y1 80 cm (32 inch) HD Ready LED Smart Linux TV  (32Y1)",
     "rating": "5",
-    "price": 10999,
+    "price": "10999",
     "imglink": "https://rukminim1.flixcart.com/image/312/312/l572ufk0/television/e/f/g/32y1-32y1-infinix-original-imagfxczrxjjwxvf.jpeg?q=70",
     "wish": false
-  },
-  {
-    "name": "Cannon",
-    "rating": "4.4",
-    "price": 20000,
-    "imglink": [
-      { "name": "dslr1.png", "type": "img", "width": "95%" },
-
-      {
-        "name": "https://www.youtube.com/embed/lT9Ta_cAMR8",
-        "title": "LifeStyle Vloggin with Canon EOS MF0Mark II by our EOS Influencer Shrmila Patil",
-        "type": "vid"
-      },
-
-      { "name": "dslr2.png", "type": "img", "width": "95%" },
-      { "name": "dslr3.png", "type": "img", "width": "70%" },
-      { "name": "dslr4.png", "type": "img", "width": "95%" },
-      { "name": "dslr5.png", "type": "img", "width": "95%" },
-      { "name": "dslr6.png", "type": "img", "width": "95%" },
-      { "name": "ts.png", "type": "img", "width": "50%" },
-      { "name": "ts2.png", "type": "img", "width": "95%" },
-      { "name": "phone1.png", "type": "img", "width": "45%" },
-      { "name": "shoes1.png", "type": "img", "width": "95%" }
-    ],
-    "specification": [
-      { "head": "Brand", "msg": "Canon" },
-      { "head": "Model Number", "msg": "1500D" },
-      { "head": "Series", "msg": "EOS" },
-      { "head": "Model Name", "msg": "EOS" },
-      { "head": "SR Variant", "msg": "Body+ 18-55 mm IS || Lens" },
-      { "head": "Type", "msg": "DSLR" }
-    ],
-    "offer": [
-      {
-        "type": "Bank Offer",
-        "msg": "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above"
-      },
-      {
-        "type": "Bank Offer",
-        "msg": "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above"
-      },
-      {
-        "type": "Bank Offer",
-        "msg": "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above"
-      },
-      {
-        "type": "Special Price",
-        "msg": "Get extra 2% off (price inclusive of cashback/coupon)"
-      }
-    ],
-    "highlight": [
-      "Effective Pixels: 24.1 MP",
-      "Sensor Type: CMOS",
-      "WiFi Available",
-      "1080p recording at 30p"
-    ],
-    "wish": false
   }
+
 ]

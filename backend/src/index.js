@@ -18,19 +18,15 @@ app.get("/", async (req, res) => {
   res.send(u);
 });
 
-app.post("/:id", async (req, res) => {
-  const { id } = req.params;
-  // console.log(id)
+app.post("/:id", async(req,res)=>{
+  const {id} = req.params
 
-  // const update = await TvModel.findById(id);
-  // let wish = update.wish;
+  let a = await TvModel.updateOne({_id:mongoose.Types.ObjectId(id)
+  },{$set:{wish:req.body.wishlist}})
+  res.send(a)
+    
+})
 
-  const search = await TvModel.updateOne(
-    {price:15000 },
-    { $set: { wish: "true" } }
-  );
-  res.send(search);
-});
 
 app.listen(8080, async () => {
   await mongoose.connect("mongodb://127.0.0.1:27017/Flipkart");

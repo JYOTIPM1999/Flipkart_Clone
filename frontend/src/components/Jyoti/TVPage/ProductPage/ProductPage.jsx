@@ -35,9 +35,11 @@ function ProductPage() {
 
 
   const toast = useToast();
-  const handleClick =  (id) => {
+  const handleClick =  (id,wish) => {
     // console.log(id)
-     axios.patch(`http://localhost:8080/${id}`).then(res=>console.log(res))
+     axios.post(`http://localhost:8080/${id}`,{ wishlist: !wish}).then(res=>
+     axios.get("http://localhost:8080/").then((res)=>setData(res.data))
+     )
    
     // setWishlist(!wishlist);
     // toast({
@@ -53,13 +55,15 @@ function ProductPage() {
 
   return (
     <>
+    
 
     {
-      data.map(elem=>(
+      data.map((elem,i)=>(
        
        /////
     
        <Box
+       key={i}
         border="1px "
         borderColor={"gray.300"}
         h="270px"
@@ -72,9 +76,9 @@ function ProductPage() {
 
 
         <Box w={"20%"}>
-          <Box ml={"90%"} onClick={()=>handleClick(elem._id)} mb="10px">
+          <Box ml={"90%"} onClick={()=>handleClick(elem._id , elem.wish)} mb="10px">
             <BsFillHeartFill
-              color={data.wish ? "red" : "gray"}
+              color={elem.wish ? "red" : "gray"}
               cursor="pointer"
             />
           </Box>
