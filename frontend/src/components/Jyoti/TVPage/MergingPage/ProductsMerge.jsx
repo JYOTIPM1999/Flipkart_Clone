@@ -19,9 +19,7 @@ function ProductsMerge() {
       >
         <Breadcrumbs />
         <ProductPage />
-        <ProductPage />
-        <ProductPage />
-        <ProductPage />
+      
       </Box>
     </Box>
   );

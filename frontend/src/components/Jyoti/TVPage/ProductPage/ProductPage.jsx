@@ -1,3 +1,4 @@
+import axios from "axios"
 import {
   Box,
   Image,
@@ -16,25 +17,49 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { BsFillHeartFill } from "react-icons/bs";
 import { useState } from "react";
+import { useEffect } from "react";
 
 function ProductPage() {
-  const [wishlist, setWishlist] = useState(false);
+  // const [wishlist, setWishlist] = useState(false);
+
+  // get request
+  const [data,setData] = useState([])
+
+  useEffect(()=>{
+   
+    axios.get("http://localhost:8080/").then((res)=>setData(res.data))
+    
+
+
+  },[])
+
 
   const toast = useToast();
-  const handleClick = () => {
-    setWishlist(!wishlist);
-    toast({
-      title: wishlist
-        ? "Item removed from the wishlist"
-        : "Item added to the cart",
-      status: wishlist ? "error" : "success",
-      duration: 1000,
-      isClosable: true,
-    });
+  const handleClick =  (id) => {
+    // console.log(id)
+     axios.patch(`http://localhost:8080/${id}`).then(res=>console.log(res))
+   
+    // setWishlist(!wishlist);
+    // toast({
+    //   title: wishlist
+    //     ? "Item removed from the wishlist"
+    //     : "Item added to the cart",
+    //   status: wishlist ? "error" : "success",
+    //   duration: 1000,
+    //   isClosable: true,
+    // });
   };
+
+
   return (
     <>
-      <Box
+
+    {
+      data.map(elem=>(
+       
+       /////
+    
+       <Box
         border="1px "
         borderColor={"gray.300"}
         h="270px"
@@ -42,29 +67,33 @@ function ProductPage() {
         gap={"10px"}
         padding={"20px 20px "}
       >
+
+       
+
+
         <Box w={"20%"}>
-          <Box ml={"90%"} onClick={handleClick} mb="10px">
+          <Box ml={"90%"} onClick={()=>handleClick(elem._id)} mb="10px">
             <BsFillHeartFill
-              color={wishlist ? "red" : "gray"}
+              color={data.wish ? "red" : "gray"}
               cursor="pointer"
             />
           </Box>
           <Box alignItems="center" m={"auto"}>
             <Image
-              src="https://rukminim1.flixcart.com/image/312/312/kzn17680/television/o/q/p/a-3210s-f-adsun-original-imagbhqzhafpzhyz.jpeg?q=70"
+              src={elem.imglink}
               w="80%"
             />
           </Box>
           <Checkbox mt={"40px"}>Add to compare</Checkbox>
         </Box>
-
+        
         <Stack w={"50%"}>
           <Text fontSize={"lg"} fontWeight="600">
-            Adsun Frameless 80 cm (32 inch) HD Ready LED Smart Android Based TV
+            {elem.name}
           </Text>
           <HStack spacing={1} alignItems="center">
             <Box className={styles.stardiv}>
-              3.8 <AiFillStar />
+              {elem.rating} <AiFillStar />
             </Box>
             <Text fontSize={"14px"} color="gray" fontWeight={"500"}>
               10000 Ratings &
@@ -85,7 +114,7 @@ function ProductPage() {
         <Stack width={"30%"}>
           <HStack alignItems="center" gap={"40px"}>
             <Text fontSize={"2xl"} fontWeight="medium">
-              ₹8,900
+              ₹{elem.price}
             </Text>
             <Image
               src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
@@ -107,7 +136,15 @@ function ProductPage() {
           </Text>
         </Stack>
       </Box>
-      <Divider />
+      // <Divider />
+
+       ////
+
+
+
+      ))
+    }
+     
     </>
   );
 }
