@@ -30,7 +30,7 @@ function App() {
         <ProductPage />
       </Box>
     </Box>
-    {/* <Details/> */}
+    <Details/>
     </>
   );
 }
