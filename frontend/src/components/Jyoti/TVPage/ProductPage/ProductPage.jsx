@@ -40,6 +40,7 @@ function ProductPage() {
       isClosable: true,
     });
   };
+  console.log(data);
   return (
     <>
       {data.map((el, i) => (
