@@ -4,7 +4,7 @@ const userSchema = new mongoose.Schema({
   id: { type: Number },
   name: { type: String },
   rating: { type: Number },
-  price: { type: String },
+  price: { type: Number },
   imglink: { type: String },
   wish: { type: Boolean },
 });
