@@ -3,17 +3,21 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const WishList = require("./Routes/Wishlist.router");
 const compression = require("compression");
-const SignUpRouter = require("./Routes/Signup.router");
-
+const userRouter = require("./Routes/user.router");
+const ProductRouter = require("./Routes/product.router");
 const TvModel = require("./Schema/tv.model");
+const ProductModel = require("./Schema/product.model");
+const UserModel = require("./Schema/user.model");
 
 const app = express();
-app.use(express.json());
 
+app.use(express.json());
 app.use(cors());
 app.use(compression());
-app.use("/signUp", SignUpRouter);
+
+app.use("/user", userRouter);
 app.use("/wishlist", WishList);
+app.use("/product", ProductRouter);
 
 app.get("/", async (req, res) => {
   let tv = await TvModel.find();

@@ -49,7 +49,7 @@ export function MultiSliderComp({ slides }) {
       <Slider {...settings}>
         {slides.map((el, i) => {
           return (
-            <Box>
+            <Box key={i}>
               <MultiSliderCart key={i} data={{ ...el }} />
             </Box>
           );

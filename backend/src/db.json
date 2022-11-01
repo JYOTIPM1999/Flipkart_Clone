@@ -91,19 +91,19 @@
 
     "bank_offers": [
       {
-        "type": "Bank Offer",
+        "name": "Bank Offer",
         "message": "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above"
       },
       {
-        "type": "Bank Offer",
+        "name": "Bank Offer",
         "message": "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above"
       },
       {
-        "type": "Bank Offer",
+        "name": "Bank Offer",
         "message": "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above"
       },
       {
-        "type": "Special Price",
+        "name": "Special Price",
         "message": "Get extra 2% off (price inclusive of cashback/coupon)"
       }
     ]

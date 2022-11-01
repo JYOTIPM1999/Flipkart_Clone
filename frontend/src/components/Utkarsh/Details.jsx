@@ -45,64 +45,17 @@ import Rating from "./Rating&Review";
 import Review from "./Review";
 import { useEffect } from "react";
 
-const spec = [
-  { head: "Brand", msg: "Canon" },
-  { head: "Model Number", msg: "1500D" },
-  { head: "Series", msg: "EOS" },
-  { head: "Model Name", msg: "EOS" },
-  { head: "SR Variant", msg: "Body+ 18-55 mm IS || Lens" },
-  { head: "Type", msg: "DSLR" },
-];
-const images = [
-  { name: "dslr1.png", type: "img", width: "95%" },
 
-  {
-    name: "https://www.youtube.com/embed/lT9Ta_cAMR8",
-    title:
-      "LifeStyle Vloggin with Canon EOS MF0Mark II by our EOS Influencer Shrmila Patil",
-    type: "vid",
-  },
 
-  { name: "dslr2.png", type: "img", width: "95%" },
-  { name: "dslr3.png", type: "img", width: "70%" },
-  { name: "dslr4.png", type: "img", width: "95%" },
-  { name: "dslr5.png", type: "img", width: "95%" },
-  { name: "dslr6.png", type: "img", width: "95%" },
-  { name: "ts.png", type: "img", width: "50%" },
-  { name: "ts2.png", type: "img", width: "95%" },
-  { name: "phone1.png", type: "img", width: "45%" },
-  { name: "shoes1.png", type: "img", width: "95%" },
-];
-
-const offer = [
-  {
-    type: "Bank Offer",
-    msg: "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above",
-  },
-  {
-    type: "Bank Offer",
-    msg: "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above",
-  },
-  {
-    type: "Bank Offer",
-    msg: "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above",
-  },
-  {
-    type: "Special Price",
-    msg: "Get extra 2% off (price inclusive of cashback/coupon)",
-  },
-];
-const highlight = [
-  "Effective Pixels: 24.1 MP",
-  "Sensor Type: CMOS",
-  "WiFi Available",
-  "1080p recording at 30p",
-];
 const Details = () => {
-  const [img, setImg] = useState(images[0]);
+  
+  const [data, setData] = useState({});
+
+  const [img, setImg] = useState();
   const [vid, setVid] = useState(false);
 
   const [wish, setWish] = useState(false);
+  const [id, setId] = useState("6360ddcd29ab05fe47db4312")
 
   const toast = useToast();
 
@@ -127,17 +80,23 @@ const Details = () => {
     setImg(elem);
   };
 
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios.get("http://localhost:8080/").then((res) => setData(res.data[2]));
-  });
+  useEffect(()=>{
+  
+  axios.get(`http://localhost:8080/product/${id}`).then(res=>{
+  console.log(res.data)  
+  setData(res.data)
+  setImg(res.data.images[0])
+  
+    
+  })
+  },[])
   // console.log(data.imglink)
   return (
     <>
       <Box className={styles.container_u}>
         <Box border="2px" borderColor="gray.200" className={styles.gallery_u}>
           <Box className={styles.photolist}>
-            {images.map((elem, i) => (
+            {data?.images?.map((elem, i) => (
               <Box
                 mb={"5px"}
                 _hover={{ border: "2px", borderColor: "#2874f0" }}
@@ -150,7 +109,7 @@ const Details = () => {
                   m={"auto"}
                   mb={"10px"}
                   w={"50px"}
-                  src={elem.type == "img" ? elem.name : "playbutton.jpg"}
+                  src={elem.type == "img" ? elem.link : "playbutton.jpg"}
                 ></Image>
               </Box>
             ))}
@@ -160,8 +119,8 @@ const Details = () => {
 
           <Box p={"10px"} className={styles.largephoto}>
             {vid && (
-              <AspectRatio mb={"10px"} W="95%" h={"400px"} ratio={1}>
-                <iframe src={img.name} title={img.type} />
+              <AspectRatio mb={"10px"} W="95%" h={"390px"} ratio={1}>
+                <iframe src={img.link} title={img.type} />
               </AspectRatio>
             )}
 
@@ -173,9 +132,9 @@ const Details = () => {
                 pb="30px"
                 mt={"20px"}
                 m={"auto"}
-                w={img.width}
+               // w={img.width}          // elem.width
                 h={"400px"}
-                src={img.name}
+               src={img?img.link:""}
               ></Image>
             )}
 
@@ -203,7 +162,12 @@ const Details = () => {
         </Box>
 
         {/* details */}
-        <Box className={styles.details_u}>
+
+       
+       {
+
+
+       data && <Box className={styles.details_u}>
           <VStack
             spacing={"17px"}
             p={"5px"}
@@ -230,7 +194,7 @@ const Details = () => {
             </Breadcrumb>
 
             <Text textAlign={"Left"} fontSize="20px">
-              Cannon EOS 1500D Camera Body+ 18-55 mm IS || Lens (Black)
+              {data.name}
             </Text>
 
             <HStack spacing={"10px"}>
@@ -242,10 +206,10 @@ const Details = () => {
                 rightIcon={<StarIcon w={"10px"} />}
                 colorScheme={"green"}
               >
-                4.5
+                {data.stars}
               </Button>
               <Text color={"gray.500"} fontSize={"13px"}>
-                14,052 Ratings & 1,964 Reviews
+               { `${data?.ratings?.toLocaleString('en-US')} Ratings & ${data?.reviews?.toLocaleString()} Reviews` }
               </Text>
               <Image w={"65px"} src="assured.png"></Image>
             </HStack>
@@ -254,25 +218,25 @@ const Details = () => {
               Special price
             </Text>
             <HStack>
-              <Text fontSize={"3xl"}>{`₹${"38,995"}`}</Text>
+              <Text fontSize={"3xl"}>{`₹${data?.price?.toLocaleString()}`}</Text>
               <Text
                 fontSize={"14px"}
                 color={"gray.500"}
                 as={"s"}
-              >{`₹${"41,995"}`}</Text>
-              <Text fontSize={"14px"} color={"gray.500"}>{`${7}% off`}</Text>
+              >{`₹${data?.discount_amount}`}</Text>
+              <Text fontSize={"14px"} color={"gray.500"}>{`${data?.discount_rate?.toLocaleString()}% off`}</Text>
               <InfoOutlineIcon color={"gray.500"} />
             </HStack>
 
             <Text fontWeight={500} fontSize={"15px"}>
               Available offers
             </Text>
-            {offer.map((elem, i) => (
+            {data?.bank_offers?.map((elem, i) => (
               <HStack key={i}>
                 <MdLocalOffer color="green" />
                 <Text fontSize={"14px"} noOfLines={1}>
-                  <span style={{ fontWeight: "500" }}>{elem.type}</span>
-                  {elem.msg}
+                  <span style={{ fontWeight: "500" }}>{elem.name}</span>
+                  {elem.message}
                   <span style={{ color: "#3583f0", fontWeight: 500 }}>
                     {" "}
                     T&C
@@ -306,7 +270,7 @@ const Details = () => {
               </Text>
 
               <UnorderedList>
-                {highlight.map((elem, i) => (
+                {data?.highlights?.map((elem, i) => (
                   <ListItem key={i}>{elem}</ListItem>
                 ))}
               </UnorderedList>
@@ -314,19 +278,19 @@ const Details = () => {
 
             <Text fontSize={30}>Specifications</Text>
 
-            {spec.map((elem, i) => (
+            {data?.general_specification?.map((elem, i) => (
               <HStack key={i}>
                 <Box w={200} border="1px" borderColor="white">
                   <Heading
                     fontWeight={500}
-                    color={elem.msg ? "gray.500" : "black"}
-                    fontSize={elem.msg ? "14px" : "18px"}
+                    color={"gray.500"}
+                    fontSize={"14px"}
                   >
                     {elem.head}
                   </Heading>
                 </Box>
 
-                <Text textAlign={"left"}>{elem.msg}</Text>
+                <Text textAlign={"left"}>{elem.info}</Text>
               </HStack>
             ))}
           </VStack>
@@ -339,7 +303,7 @@ const Details = () => {
             borderColor={"gray.300"}
           >
             {/* rating component */}
-            <Rating />
+            <Rating rate={data?.rating} tr={data?.reviews} rat={data?.stars_count} cr={data?.circular_rating} />
             <Divider />
             <Review />
             <Review />
@@ -348,8 +312,12 @@ const Details = () => {
             <Review />
           </Box>
         </Box>
+        }
       </Box>
+            
       <Box w={"100%"} h="500px" border={"6px"} borderColor="red"></Box>
+
+            
     </>
   );
 };
