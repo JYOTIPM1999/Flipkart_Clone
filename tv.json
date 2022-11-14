@@ -1,0 +1,105 @@
+[
+  {
+    "name": "Canon EOS 1500D DSLR Camera Body+ 18-55 mm IS II Lens  (Black)",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/kk01pjk0/dslr-camera/f/v/o/eos-1500d-canon-original-imafzfugydh2mjgf.jpeg?q=70",
+    "brand": "Canon",
+    "price": 31499,
+    "stars": 4.4,
+    "stars_count": [16252, 5886, 1686, 510, 1273],
+    "circular_rating": [90, 50, 70, 63],
+    "ratings": 25587,
+    "reviews": 3812,
+    "discount_amount": 33995,
+    "discount_rate": 7,
+    "warranty": "2 Year Warranty (1 year standard warranty + 1 year additional warranty from the date of purchase made by the customer.)",
+    "display_size": [32, 40, 50],
+    "ideal_for": [4, 5],
+    "resolution": ["Full HD", "HD Ready", "Ultra HD(4K)", "Ultra HD(8K)"],
+    "screen_type": ["LCD", "LED", "OLED", "QLED"],
+    "smart_tv": true,
+    "operating_system": "Android",
+    "connectivity": "Bluetooth",
+    "number_of_HDMI_ports": [1, 2, 3, 4],
+    "number_of_USB_ports": [1, 2, 3, 4],
+    "highlights": [
+      "Effective Pixels: 24.1 MP",
+      "Sensor Type: CMOS",
+      "WiFi Available",
+      "1080p recording at 30p"
+    ],
+    "payment_methods": [
+      "No cost EMI starting from ₹2,334/month",
+      "Flipkart pay later",
+      "Cash on Delivery",
+      "Net banking & Credit/ Debit/ ATM card"
+    ],
+    "seller": {
+      "name": "OmniTech Retail",
+      "stars": 4.7,
+      "otherinfo": ["10 Days Replacement Policy", "GST invoice available"]
+    },
+    "description": "This Canon Camera gives you the freedom to explore different ways to shoot subjects. It packs a multitude of shooting options which you can incorporate in still images to create art that embodies the exact mood and vision you are going for. Don’t worry about the lighting conditions of a place because this camera’s large-sized sensor is designed to capture picture-perfect shots even in a dimly lit environment. Thanks to its Wi-Fi connectivity and NFC paring options, sharing photos is as simple as it gets.",
+    "general_specification": [
+      { "head": "Brand", "info": "Canon" },
+      { "head": "Model Number", "info": "1500D" },
+      { "head": "Model Name", "info": "EOS" },
+      { "head": "SLR Variant", "info": "1 Camera Body, 18-55 Lens" },
+      { "head": "Brand Color", "info": "Black" },
+      { "head": "Type", "info": "DSLR" },
+      { "head": "Color", "info": "Black" },
+      { "head": "Effective Pixels", "info": "18 Mp" },
+      { "head": "Tripod Socket", "info": "Yes" }
+    ],
+    "bank_offers": [
+      {
+        "name": "Bank Offer",
+        "message": "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above"
+      },
+      {
+        "name": "Bank Offer",
+        "message": "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above"
+      },
+      {
+        "name": "Bank Offer",
+        "message": "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above"
+      },
+      {
+        "name": "Special Price",
+        "message": "Get extra 2% off (price inclusive of cashback/coupon)"
+      }
+    ],
+    "images": [
+      {
+        "link": "https://rukminim1.flixcart.com/image/416/416/kc3p30w0/dslr-camera/d/g/p/eos-eos-1500d-canon-original-imafta9rtu4wxj8h.jpeg?q=70",
+        "type": "img",
+        "width": "90%"
+      },
+      {
+        "link": "https://www.youtube.com/embed/lT9Ta_cAMR8",
+        "type": "vid",
+        "width": "LifeStyle Vloggin with Canon EOS MF0Mark II by our EOS Influencer Shrmila Patil"
+      },
+
+      {
+        "link": "https://rukminim1.flixcart.com/image/416/416/kk01pjk0/dslr-camera/m/v/a/eos-1500d-canon-original-imafzfugqghjtpep.jpeg?q=70",
+        "type": "img",
+        "width": "90%"
+      },
+      {
+        "link": "https://rukminim1.flixcart.com/image/416/416/kk01pjk0/dslr-camera/s/q/k/eos-1500d-canon-original-imafzfughbzn7tmg.jpeg?q=70",
+        "type": "img",
+        "width": "90%"
+      },
+      {
+        "link": "https://rukminim1.flixcart.com/image/416/416/kk01pjk0/dslr-camera/w/f/q/eos-1500d-canon-original-imafzfugm7yaxf6b.jpeg?q=70",
+        "type": "img",
+        "width": "90%"
+      },
+      {
+        "link": "https://rukminim1.flixcart.com/image/416/416/kc3p30w0/dslr-camera/d/g/p/eos-eos-1500d-canon-original-imafta9rswfqk3yz.jpeg?q=70",
+        "type": "img",
+        "width": "90%"
+      }
+    ]
+  }
+]
