@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import React from "react";
 import ProductPage from "../Jyoti/ProductPage/ProductPage";
-import Details from "../Utkarsh/Details";
+import Details from "../../components/Utkarsh/Details";
 
 export const AllRoutes = () => {
   return (
