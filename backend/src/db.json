@@ -40,24 +40,22 @@
       "otherinfo": ["10 Days Replacement Policy", "GST invoice available"]
     },
     "description": "Bring home this TV from realme and experience the stunning visuals that result from its Chroma Boost Picture Engine. Boasting a Bezel-less design and Dolby Surround Audio, this Android TV blends right into your decor and offers you audio performance that makes your favourite TV shows, movies, and other video content all the more enjoyable.",
-    "Specification": {
-      "General": [
-        {
-          "In The Box": "1U contains LED TV 1N, Power Cable 1N, Remote Control 1N, Battery 2N, Manual 1N, Stand 1N"
-        },
-        { "Model Name": "TV 32" },
-        { "Color": "Black" },
-        { "Display Size": "80 cm (32 inch)" },
-        { "Screen Type": "LED" },
-        { "Motion Sensor": "No" },
-        { "HDMI": "3" },
-        { "USB": "2" },
-        { "Wi-Fi Type": "Support 2.4G" },
-        { "Built In Wi-Fi": "Yes" },
-        { "Launch Year": "2020" },
-        { "Wall Mount included": "No" }
-      ]
-    },
+    "Specification": [
+      {
+        "In The Box": "1U contains LED TV 1N, Power Cable 1N, Remote Control 1N, Battery 2N, Manual 1N, Stand 1N"
+      },
+      { "Model Name": "TV 32" },
+      { "Color": "Black" },
+      { "Display Size": "80 cm (32 inch)" },
+      { "Screen Type": "LED" },
+      { "Motion Sensor": "No" },
+      { "HDMI": "3" },
+      { "USB": "2" },
+      { "Wi-Fi Type": "Support 2.4G" },
+      { "Built In Wi-Fi": "Yes" },
+      { "Launch Year": "2020" },
+      { "Wall Mount included": "No" }
+    ],
 
     "Ratings&Reviews": [
       [140007, 54058, 15464, 4624, 13944],
@@ -67,6 +65,224 @@
           "Sound": 4.3,
           "Connectivity": 3.9,
           "Delivery & Installation": 4.0
+        }
+      ]
+    ],
+
+    "Review_image": ["abc", "def", "dhi"],
+
+    "comments": [
+      {
+        "star": 5,
+        "heading": "Worth every penny",
+        "description": "Item is good sound quality is good picture is good realme tv good",
+        "images": [
+          "https://rukminim1.flixcart.com/image/128/128/xif0q/television/h/a/r/-original-imaghgphdj9fsvzt.jpeg?q=70",
+          "https://rukminim1.flixcart.com/image/128/128/xif0q/television/3/u/p/-original-imaghgph8dzzmnaa.jpeg?q=70"
+        ],
+        "name": "Mayur",
+        "date": "Oct,2022",
+        "likes": 1999,
+        "dislikes": 200
+      }
+    ],
+
+    "bank_offers": [
+      {
+        "type": "Bank Offer",
+        "message": "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above"
+      },
+      {
+        "type": "Bank Offer",
+        "message": "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above"
+      },
+      {
+        "type": "Bank Offer",
+        "message": "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above"
+      },
+      {
+        "type": "Special Price",
+        "message": "Get extra 2% off (price inclusive of cashback/coupon)"
+      }
+    ]
+  },
+  {
+    "name": "OnePlus Y1S 80 cm (32 inch) HD Ready LED Smart Android TV with Android 11 and Bezel-Less Frame  (32HD2A00)",
+    "brand": "OnePlus",
+
+    "stars": 4.3,
+    "ratings": 132922,
+    "reviews": 12267,
+    "discount_amount": 500,
+    "mrp": 15999,
+    "previous_price": 21999,
+    "discount_percent": 27,
+    "warranty": " 1 Year Domestic Warranty, 2 Years on Panel",
+    "display_size": [32, 40, 43],
+    "ideal_for": [4, 5],
+    "resolution": ["Full HD", "HD Ready", "Ultra HD(4K)", "Ultra HD(8K)"],
+    "screen_type": ["LCD", "LED", "OLED", "QLED"],
+    "smart_tv": "YES",
+    "operating_system": "Android",
+    "connectivity": "Bluetooth",
+    "number_of_HDMI_ports": [1, 2, 3, 4],
+    "number_of_USB_ports": [1, 2, 3, 4],
+
+    "highlights": [
+      "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
+      "Operating System: Android (Google Assistant & Chromecast in-built)",
+      "Resolution: HD Ready 1366 x 768 Pixels",
+      "Sound Output: 20 W",
+      "Refresh Rate: 60 Hz"
+    ],
+    "Payment_methods": [
+      "No cost EMI starting from ₹2,334/month",
+      "Flipkart pay later",
+      "Cash on Delivery",
+      "Net banking & Credit/ Debit/ ATM card"
+    ],
+    "seller": {
+      "name": "OmniTech Retail",
+      "stars": 4.7,
+      "otherinfo": ["10 Days Replacement Policy", "GST invoice available"]
+    },
+    "description": "You can watch your favourite movies, shows, and other content on this OnePlus TV. Sporting a slim bezel-less design, this TV is designed to offer an enhanced viewing experience. Powered by an AI-driven Gamma Engine, this TV provides lifelike visuals with brilliant colours. Moreover, this TV is equipped with powerful speakers that produce clear and immersive sound. Besides, its Auto Low Latency Mode (ALLM) gives you an edge over the competition when you’re playing games.",
+    "Specification": {
+      "General": [
+        {
+          "In The Box": "1n Television Set, 2N AAA Battery, 2N Stand Base, 4N Screws, 1N Manual & Warranty Card, 1N Remote Controller"
+        },
+        { "Model Name": "32HD2A00" },
+        { "Color": "Black" },
+        { "Display Size": "80 cm (32 inch)" },
+        { "Screen Type": "LED" },
+        { "Motion Sensor": "No" },
+        { "HDMI": "2" },
+        { "USB": "2" },
+        { "Wi-Fi Type": "Dual-Band Wi-Fi" },
+        { "Built In Wi-Fi": "Yes" },
+        { "Launch Year": "2022" },
+        { "Wall Mount included": "No" }
+      ]
+    },
+
+    "Ratings&Reviews": [
+      [82773, 30379, 8418, 2552, 8800],
+      [
+        {
+          "Picture": 4.2,
+          "Sound": 4.1,
+          "Connectivity": 4.1,
+          "Delivery & Installation": 4.1
+        }
+      ]
+    ],
+
+    "Review_image": ["abc", "def", "dhi"],
+
+    "comments": [
+      {
+        "star": 5,
+        "heading": "Worth every penny",
+        "description": "Item is good sound quality is good picture is good realme tv good",
+        "images": [
+          "https://rukminim1.flixcart.com/image/128/128/xif0q/television/h/a/r/-original-imaghgphdj9fsvzt.jpeg?q=70",
+          "https://rukminim1.flixcart.com/image/128/128/xif0q/television/3/u/p/-original-imaghgph8dzzmnaa.jpeg?q=70"
+        ],
+        "name": "Mayur",
+        "date": "Oct,2022",
+        "likes": 1999,
+        "dislikes": 200
+      }
+    ],
+
+    "bank_offers": [
+      {
+        "type": "Bank Offer",
+        "message": "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above"
+      },
+      {
+        "type": "Bank Offer",
+        "message": "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above"
+      },
+      {
+        "type": "Bank Offer",
+        "message": "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above"
+      },
+      {
+        "type": "Special Price",
+        "message": "Get extra 2% off (price inclusive of cashback/coupon)"
+      }
+    ]
+  },
+  {
+    "name": "LG 80 cm (32 inch) HD Ready LED Smart WebOS TV.",
+    "brand": "LG",
+
+    "stars": 4.4,
+    "ratings": 47951,
+    "reviews": 4298,
+    "discount_amount": 1500,
+    "mrp": 13999,
+    "previous_price": 21990,
+    "discount_percent": 36,
+    "warranty": " 1 Year Domestic Warranty, 2 Years on Panel",
+    "display_size": [32, 40, 46],
+    "ideal_for": [4, 5],
+    "resolution": ["Full HD", "HD Ready", "Ultra HD(4K)", "Ultra HD(8K)"],
+    "screen_type": ["LCD", "LED", "OLED", "QLED"],
+    "smart_tv": "YES",
+    "operating_system": "WebOS",
+    "connectivity": "Bluetooth",
+    "number_of_HDMI_ports": [1, 2, 3, 4],
+    "number_of_USB_ports": [1, 2, 3, 4],
+
+    "highlights": [
+      "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
+      "Operating System: WebOS",
+      "Resolution: HD Ready 1366 x 768 Pixels",
+      "Sound Output: 10 W",
+      "Refresh Rate: 50 Hz"
+    ],
+    "Payment_methods": [
+      "No cost EMI starting from ₹2,334/month",
+      "Flipkart pay later",
+      "Cash on Delivery",
+      "Net banking & Credit/ Debit/ ATM card"
+    ],
+    "seller": {
+      "name": "OmniTech Retail",
+      "stars": 4.7,
+      "otherinfo": ["10 Days Replacement Policy", "GST invoice available"]
+    },
+    "description": "You can watch your favourite movies, shows, and other content on this OnePlus TV. Sporting a slim bezel-less design, this TV is designed to offer an enhanced viewing experience. Powered by an AI-driven Gamma Engine, this TV provides lifelike visuals with brilliant colours. Moreover, this TV is equipped with powerful speakers that produce clear and immersive sound. Besides, its Auto Low Latency Mode (ALLM) gives you an edge over the competition when you’re playing games.",
+    "Specification": {
+      "General": [
+        {
+          "In The Box": "1n Television Set, 2N AAA Battery, 2N Stand Base, 4N Screws, 1N Manual & Warranty Card, 1N Remote Controller"
+        },
+        { "Model Name": "32HD2A00" },
+        { "Color": "Black" },
+        { "Display Size": "80 cm (32 inch)" },
+        { "Screen Type": "LED" },
+        { "Motion Sensor": "No" },
+        { "HDMI": "2" },
+        { "USB": "2" },
+        { "Wi-Fi Type": "Dual-Band Wi-Fi" },
+        { "Built In Wi-Fi": "Yes" },
+        { "Launch Year": "2022" },
+        { "Wall Mount included": "No" }
+      ]
+    },
+
+    "Ratings&Reviews": [
+      [82773, 30379, 8418, 2552, 8800],
+      [
+        {
+          "Picture": 4.2,
+          "Sound": 4.1,
+          "Connectivity": 4.1,
+          "Delivery & Installation": 4.1
         }
       ]
     ],
