@@ -33,7 +33,7 @@ app.post("/:id", async (req, res) => {
   res.send(update);
 });
 
-mongoose.connect("mongodb://127.0.0.1:27017/Flipkart").then(() => {
+mongoose.connect("mongodb+srv://FLIPKART:project@cluster0.aycyzrd.mongodb.net/Flipkart").then(() => {
   app.listen(8080, (req, res) => {
     console.log("you sever started on http://localhost:8080");
   });

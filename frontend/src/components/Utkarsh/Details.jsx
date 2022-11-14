@@ -55,7 +55,7 @@ const Details = () => {
   const [vid, setVid] = useState(false);
 
   const [wish, setWish] = useState(false);
-  const [id, setId] = useState("6360ddcd29ab05fe47db4312")
+  const [id, setId] = useState("63725feb4c2eed1d06721ab2")
 
   const toast = useToast();
 
