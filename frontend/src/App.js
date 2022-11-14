@@ -1,10 +1,10 @@
 import "./App.css";
 
-import ProductsMerge from "./components/Jyoti/TVPage/MergingPage/ProductsMerge";
-import CartMerge from "./components/Jyoti/CartPage/MergePage/CartMerge";
-import Details from "./components/Utkarsh/Details";
-import { HomePage } from "./components/Aman/HomePage";
-import Footer from "./components/Aman/Footer";
+import ProductsMerge from "./components/TVPage/MergingPage/ProductsMerge";
+import CartMerge from "./components/CartPage/MergePage/CartMerge";
+import Details from "./components/SinglePage/Details";
+import { HomePage } from "./components/Homepage/HomePage";
+import Footer from "./components/Homepage/Footer";
 
 function App() {
   return (

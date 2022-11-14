@@ -18,7 +18,12 @@ const totalrating = 14052;
 const totalreview = 1964;
 const rating = [9630, 2992, 666, 185, 579];
 
-const Rating = ({rate=4.5, tr = 14052, rat=[9630,2992,666,185,579],cr=[90,70]}) => {
+const Rating = ({
+  rate = 4.5,
+  tr = 14052,
+  rat = [9630, 2992, 666, 185, 579],
+  cr = [90, 70],
+}) => {
   return (
     <Box className={styles.ratingparent}>
       <Box display={"flex"} justifyContent="space-between">
@@ -89,45 +94,29 @@ const Rating = ({rate=4.5, tr = 14052, rat=[9630,2992,666,185,579],cr=[90,70]}) 
           </Box>
         </Box>
         {/* Progress Box */}
-        <Box display={"flex"}  h={"170px"} border={"1px"} borderColor={"white"}>
-        <Box h="105px" mt={"60px"} border="1px" borderColor={"white"} >
-          <HStack align={"center"}>
-           
-           
-            {    
-                   cr.map((elem,i)=>(
-
-                    <VStack spacing={"0px"}>
-                    <CircularProgress
-                      size={"80px"}
-                      thickness="6px"
-                      value={elem}
-                      color="green.400"
-                    >
-                      <CircularProgressLabel>{elem}</CircularProgressLabel>
-                    </CircularProgress>
-                    <Text fontWeight={500}>{(i==0 && "camera") || (i==1 && "Battery") || (i==2 && "Design") || (i==3 && "Display") }</Text>
-                  </VStack> 
-
-
-                   ))
-                 
-                  
-
-                  
-                  
-             }
-
-           
-             
-
-            
-
-           
-
-          
-          </HStack>
-        </Box>
+        <Box display={"flex"} h={"170px"} border={"1px"} borderColor={"white"}>
+          <Box h="105px" mt={"60px"} border="1px" borderColor={"white"}>
+            <HStack align={"center"}>
+              {cr.map((elem, i) => (
+                <VStack spacing={"0px"}>
+                  <CircularProgress
+                    size={"80px"}
+                    thickness="6px"
+                    value={elem}
+                    color="green.400"
+                  >
+                    <CircularProgressLabel>{elem}</CircularProgressLabel>
+                  </CircularProgress>
+                  <Text fontWeight={500}>
+                    {(i === 0 && "camera") ||
+                      (i === 1 && "Battery") ||
+                      (i === 2 && "Design") ||
+                      (i === 3 && "Display")}
+                  </Text>
+                </VStack>
+              ))}
+            </HStack>
+          </Box>
         </Box>
       </HStack>
     </Box>
