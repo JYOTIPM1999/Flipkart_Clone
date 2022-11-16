@@ -59,8 +59,9 @@ const Signup = () => {
               <FormLabel>Password</FormLabel>
               <Input placeholder="Password" />
               <Text>
-                By continuing, you agree to Flipkart's Terms of Use and Privacy
-                Policy.
+                By continuing, you agree to Flipkart's{" "}
+                <span style={{ color: "#2874f0" }}>Terms of Use</span> and
+                <span style={{ color: "#2874f0" }}>Privacy Policy.</span>
               </Text>
               <Button
                 mt={4}
@@ -72,9 +73,17 @@ const Signup = () => {
               >
                 CONTINUE
               </Button>
-              <Button mt={5} bg={"gray"} _hover={"none"}>
+
+              <Button
+                mt={5}
+                bg={"white"}
+                boxShadow={
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+                }
+                _hover={"none"}
+              >
                 <Image
-                  w="30%"
+                  w="28%"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
                 />
               </Button>
