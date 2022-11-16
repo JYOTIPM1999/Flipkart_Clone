@@ -1,10 +1,9 @@
 import "./App.css";
-
-import ProductsMerge from "./components/TVPage/MergingPage/ProductsMerge";
-import CartMerge from "./components/CartPage/MergePage/CartMerge";
-import Details from "./components/SinglePage/Details";
-import { HomePage } from "./components/Homepage/HomePage";
-import Footer from "./components/Homepage/Footer";
+import CartMerge from "./pages/CartPage/CartMerge";
+import Footer from "./pages/Homepage/Footer";
+import { HomePage } from "./pages/Homepage/HomePage";
+import Details from "./pages/SinglePage/Details";
+import ProductsMerge from "./pages/TVPage/ProductsMerge";
 
 function App() {
   return (
