@@ -1,10 +1,9 @@
 import "./App.css";
-
-import ProductsMerge from "./components/Jyoti/TVPage/MergingPage/ProductsMerge";
-import CartMerge from "./components/Jyoti/CartPage/MergePage/CartMerge";
-import Details from "./components/Utkarsh/Details";
-import { HomePage } from "./components/Aman/HomePage";
-import Footer from "./components/Aman/Footer";
+import CartMerge from "./pages/CartPage/CartMerge";
+import Footer from "./pages/Homepage/Footer";
+import { HomePage } from "./pages/Homepage/HomePage";
+import Details from "./pages/SinglePage/Details";
+import ProductsMerge from "./pages/TVPage/ProductsMerge";
 
 function App() {
   return (
