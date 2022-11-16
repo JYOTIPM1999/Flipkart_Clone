@@ -6,19 +6,24 @@ import {
   Image,
   Input,
   Modal,
-  ModalBody,
   ModalCloseButton,
   ModalContent,
-  ModalFooter,
-  ModalHeader,
   ModalOverlay,
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
+import { useState } from "react";
 
 const Signup = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const [signup, setSignup] = useState({ name: "", email: "", password: "" });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target.value);
+  };
   return (
     <>
       <Button onClick={onOpen}>Open Modal</Button>
@@ -51,17 +56,36 @@ const Signup = () => {
             </Box>
           </Box>
           <Box w={"60%"} p={"20px"} bg={"white"}>
-            <FormControl isRequired>
+            <FormControl isRequired onSubmit={handleSubmit}>
               <FormLabel>Name</FormLabel>
-              <Input placeholder="Name" />
+              <Input
+                onChange={(e) => setSignup({ ...signup, name: e.target.value })}
+                value={signup.name}
+                // name="name"
+                placeholder="Name"
+              />
               <FormLabel>Email</FormLabel>
-              <Input placeholder="Email" />
+              <Input
+                onChange={(e) =>
+                  setSignup({ ...signup, email: e.target.value })
+                }
+                value={signup.email}
+                // name="email"
+                placeholder="Email"
+              />
               <FormLabel>Password</FormLabel>
-              <Input placeholder="Password" />
-              <Text>
-                By continuing, you agree to Flipkart's{" "}
-                <span style={{ color: "#2874f0" }}>Terms of Use</span> and
-                <span style={{ color: "#2874f0" }}>Privacy Policy.</span>
+              <Input
+                onChange={(e) =>
+                  setSignup({ ...signup, password: e.target.value })
+                }
+                value={signup.password}
+                // name="password"
+                placeholder="Password"
+              />
+              <Text fontSize={"12px"}>
+                By continuing, you agree to Flipkart's
+                <span style={{ color: "#2874f0" }}> Terms of Use</span> and
+                <span style={{ color: "#2874f0" }}> Privacy Policy.</span>
               </Text>
               <Button
                 mt={4}
@@ -70,6 +94,7 @@ const Signup = () => {
                 color={"whiteAlpha.900"}
                 type="submit"
                 _hover={"none"}
+                onClick={handleSubmit}
               >
                 CONTINUE
               </Button>
