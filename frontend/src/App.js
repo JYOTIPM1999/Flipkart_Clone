@@ -1,4 +1,5 @@
 import "./App.css";
+import Signin from "./components/Signin";
 import CartMerge from "./pages/CartPage/CartMerge";
 import Footer from "./pages/Homepage/Footer";
 import { HomePage } from "./pages/Homepage/HomePage";
@@ -8,11 +9,14 @@ import ProductsMerge from "./pages/TVPage/ProductsMerge";
 function App() {
   return (
     <>
-      <HomePage />
+      {/* <HomePage />
       <ProductsMerge />
       <CartMerge />
-      <Details />
-      <Footer />
+       <Details />
+      <Footer /> */}
+
+      <Signin/>
+      
     </>
   );
 }
