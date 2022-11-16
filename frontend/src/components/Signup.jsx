@@ -30,17 +30,25 @@ const Signup = () => {
           display={"flex"}
           flexDirection={"row"}
         >
-          <Box w={"40%"} p={"20px"}>
-            <Text fontSize={"3xl"} color={"white"}>
-              Looks like you're new here!
-            </Text>
-            <Text color={"whiteAlpha.900"} mt={"20px"}>
-              Sign up with your mobile number to get started
-            </Text>
-            <Image
-              alignItems={""}
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5oqsC5LRzpReO79--9ZrrpdlnoxSfshopoQ&usqp=CAU"
-            />
+          <ModalCloseButton />
+          <Box
+            w={"40%"}
+            p={"20px"}
+            display={"flex"}
+            flexDirection={"column"}
+            justifyContent={"space-between"}
+          >
+            <Box>
+              <Text fontSize={"3xl"} color={"white"}>
+                Looks like you're new here!
+              </Text>
+              <Text color={"whiteAlpha.900"} mt={"20px"}>
+                Sign up with your mobile number to get started
+              </Text>
+            </Box>
+            <Box>
+              <Image src="https://sightsinplus.nyc3.digitaloceanspaces.com/sightsinplus/wp-content/uploads/2020/05/19074016/flipkart-logo-detail-icon.jpeg" />
+            </Box>
           </Box>
           <Box w={"60%"} p={"20px"} bg={"white"}>
             <FormControl isRequired>
