@@ -2,9 +2,9 @@ const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
   name: { type: String },
-  display_img:{type:String},
+  display_img: { type: String },
   brand: { type: String, required: true },
-  price:{type:Number},
+  price: { type: Number },
   stars: { type: Number },
   stars_count: { type: [Number] },
   circular_rating: { type: [Number] },
