@@ -31,7 +31,7 @@ const Signup = () => {
         <ModalOverlay />
         <ModalContent
           bg={"#2874f0"}
-          height={"70vh"}
+          // height={"auto"}
           display={"flex"}
           flexDirection={"row"}
         >
@@ -99,9 +99,15 @@ const Signup = () => {
                 CONTINUE
               </Button>
 
+              <Button w={"100%"} mt={5} color={"#2874f0"}>
+                Existing User? Log in
+              </Button>
+              <Text textAlign={"center"} fontWeight={"bold"}>
+                Or
+              </Text>
               <Button
-                mt={5}
-                bg={"white"}
+                mt={4}
+                bg={"#2874f0"}
                 boxShadow={
                   "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
                 }
