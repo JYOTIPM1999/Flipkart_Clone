@@ -1,5 +1,7 @@
 import "./App.css";
 import Signup from "./components/Signup";
+
+import Signin from "./components/Signin";
 import CartMerge from "./pages/CartPage/CartMerge";
 import Footer from "./pages/Homepage/Footer";
 import { HomePage } from "./pages/Homepage/HomePage";
@@ -15,6 +17,8 @@ function App() {
       <Details /> */}
       <Signup />
       {/* <Footer /> */}
+      <Signin/>
+      
     </>
   );
 }
