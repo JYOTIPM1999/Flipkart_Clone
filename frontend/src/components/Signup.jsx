@@ -15,15 +15,18 @@ import {
   InputGroup,
   InputRightElement,
   useDisclosure,
+  useToast,
 } from "@chakra-ui/react";
 import React from "react";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
+import axios from "axios";
 
 const Signup = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const toast = useToast();
   const [signup, setSignup] = useState({ name: "", email: "", password: "" });
+  const [signin, setSignin] = useState({ email: "", password: "" });
 
   const [open, setOpen] = useState(true);
 
@@ -31,9 +34,80 @@ const Signup = () => {
     setOpen(!open);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(e.target.value);
+  const handleSubmitSignup = async () => {
+    await axios
+      .post("http://localhost:8080/user/signup", signup)
+      .then((res) => {
+        if (res.data === "success") {
+          setOpen(false);
+        } else {
+          setOpen(true);
+          toast({
+            title: "User already exist",
+            description: "We've created your account for you.",
+            status: "error",
+            duration: 5000,
+            isClosable: true,
+          });
+        }
+      });
+
+    // toast({
+    //   title: "Please fill all the details...",
+    //   description: "We've created your account for you.",
+    //   status: "error",
+    //   duration: 5000,
+    //   isClosable: true,
+    // });
+  };
+
+  const handleSubmitSignin = () => {
+    axios.post("http://localhost:8080/user/signin", signin).then((res) => {
+      if (res.data === "user not found") {
+        toast({
+          title: "User not found....",
+          // description: "We've created your account for you.",
+          status: "error",
+          duration: 5000,
+          isClosable: true,
+        });
+      } else if (res.data === "wrong credentials") {
+        toast({
+          title: "Wrong credentials....",
+          // description: "We've created your account for you.",
+          status: "warning",
+          duration: 5000,
+          isClosable: true,
+        });
+      } else {
+        toast({
+          title: "User Logged in successfully....",
+          // description: "We've created your account for you.",
+          status: "success",
+          duration: 5000,
+          isClosable: true,
+        });
+      }
+    });
+  };
+
+  const handleSignup = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+
+    setSignup({
+      ...signup,
+      [name]: value,
+    });
+  };
+  const handleSignin = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+
+    setSignin({
+      ...signin,
+      [name]: value,
+    });
   };
 
   return (
@@ -69,32 +143,26 @@ const Signup = () => {
               </Box>
             </Box>
             <Box w={"60%"} p={"20px"} bg={"white"}>
-              <FormControl isRequired onSubmit={handleSubmit}>
+              <FormControl isRequired>
                 <FormLabel>Name</FormLabel>
                 <Input
-                  onChange={(e) =>
-                    setSignup({ ...signup, name: e.target.value })
-                  }
+                  onChange={handleSignup}
                   value={signup.name}
-                  // name="name"
+                  name="name"
                   placeholder="Name"
                 />
                 <FormLabel>Email</FormLabel>
                 <Input
-                  onChange={(e) =>
-                    setSignup({ ...signup, email: e.target.value })
-                  }
+                  onChange={handleSignup}
                   value={signup.email}
-                  // name="email"
+                  name="email"
                   placeholder="Email"
                 />
                 <FormLabel>Password</FormLabel>
                 <Input
-                  onChange={(e) =>
-                    setSignup({ ...signup, password: e.target.value })
-                  }
+                  onChange={handleSignup}
                   value={signup.password}
-                  // name="password"
+                  name="password"
                   placeholder="Password"
                 />
                 <Text fontSize={"12px"}>
@@ -109,7 +177,7 @@ const Signup = () => {
                   color={"whiteAlpha.900"}
                   type="submit"
                   _hover={"none"}
-                  onClick={handleSubmit}
+                  onClick={handleSubmitSignup}
                 >
                   CONTINUE
                 </Button>
@@ -180,9 +248,18 @@ const Signup = () => {
                       mb={"20px"}
                       variant="flushed"
                       placeholder="Enter Email"
+                      name="email"
+                      value={signin.email}
+                      onChange={handleSignin}
                     />
                     <InputGroup>
-                      <Input variant="flushed" placeholder="Enter Password" />
+                      <Input
+                        variant="flushed"
+                        placeholder="Enter Password"
+                        name="password"
+                        value={signin.password}
+                        onChange={handleSignin}
+                      />
 
                       <InputRightElement width="4.5rem">
                         <Button variant={"flushed"} color={"#2874f0"}>
@@ -200,6 +277,7 @@ const Signup = () => {
                       bg={"#fb641b"}
                       w="100%"
                       color="white"
+                      onClick={handleSubmitSignin}
                     >
                       Login
                     </Button>
