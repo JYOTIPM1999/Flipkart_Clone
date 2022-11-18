@@ -35,30 +35,32 @@ const Signup = () => {
   };
 
   const handleSubmitSignup = async () => {
-    await axios
-      .post("http://localhost:8080/user/signup", signup)
-      .then((res) => {
-        if (res.data === "success") {
-          setOpen(false);
-        } else {
-          setOpen(true);
-          toast({
-            title: "User already exist",
-            description: "We've created your account for you.",
-            status: "error",
-            duration: 5000,
-            isClosable: true,
-          });
-        }
+    if (signup.name === "" || signup.email === "" || signup.password === "") {
+      toast({
+        title: "Please fill all the details...",
+        description: "We've created your account for you.",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
       });
-
-    // toast({
-    //   title: "Please fill all the details...",
-    //   description: "We've created your account for you.",
-    //   status: "error",
-    //   duration: 5000,
-    //   isClosable: true,
-    // });
+    } else {
+      await axios
+        .post("http://localhost:8080/user/signup", signup)
+        .then((res) => {
+          if (res.data === "success") {
+            setOpen(false);
+          } else {
+            setOpen(true);
+            toast({
+              title: "User already exist",
+              description: "We've created your account for you.",
+              status: "error",
+              duration: 5000,
+              isClosable: true,
+            });
+          }
+        });
+    }
   };
 
   const handleSubmitSignin = () => {
