@@ -49,6 +49,7 @@ const Signup = () => {
         .then((res) => {
           if (res.data === "success") {
             setOpen(false);
+            setSignup("");
           } else {
             setOpen(true);
             toast({
