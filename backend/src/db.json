@@ -19,6 +19,7 @@
       "Sound Output: 24 W",
       "Refresh Rate: 60 Hz"
     ],
+
    
     "general_specification": [
       {
@@ -70,11 +71,18 @@
         }
       ]
     ],
-
-    "Review_image": ["abc", "def", "dhi"],
-
-    "comments": [
-      {"user_id":"sdfdsfsdfsdfsdf","comments":"abcd","reviewimage":"","ratings":""}
+    "Ratings&Reviews": [
+      [140007, 54058, 15464, 4624, 13944],
+      [
+        {
+          "Picture": 4.2,
+          "Sound": 4.3,
+          "Connectivity": 3.9,
+          "Delivery & Installation": 4.0
+        }
+      ]
+    ],
+    
     ]
 
    
