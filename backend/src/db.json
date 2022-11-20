@@ -64,5 +64,72 @@
     "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
 
     "review_image": ["abc", "def", "dhi"]
+  },
+
+  {
+    "name": "realme 80 cm (32 inch) HD Ready LED Smart Android TV  (TV 32)",
+    "display_img": "src",
+    "images": ["src", "src"],
+    "brand": "Realme",
+    "stars": 4.4,
+    "price": 13999,
+    "previous_price": 17999,
+    "discount_amount": 1500,
+    "discount_percent": 22,
+    "stars_count": [1200, 2500, 3500],
+    "circular_rating": [1200, 2500, 3500],
+    "ratings": 228000,
+    "reviews": 15000,
+    "display_size": [32, 40, 50],
+    "resolutions": ["Full HD", "HD Ready", "Ultra HD(4K)", "Ultra HD(8K)"],
+    "highlights": [
+      "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
+      "Operating System: Android (Google Assistant & Chromecast in-built)",
+      "Resolution: HD Ready 1366 x 768 Pixels",
+      "Sound Output: 24 W",
+      "Refresh Rate: 60 Hz"
+    ],
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   }
 ]
