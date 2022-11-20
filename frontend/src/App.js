@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       {/* <HomePage /> */}
-      {/* <ProductsMerge />
-      <CartMerge />
-      <Details /> */}
+      {/* <ProductsMerge /> */}
+      {/* <CartMerge /> */}
+     <Details /> 
       {/* <Footer /> */}
       <Signup />
     </>
