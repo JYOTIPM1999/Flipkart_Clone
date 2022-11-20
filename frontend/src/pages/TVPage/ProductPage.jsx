@@ -18,6 +18,32 @@ import { BsFillHeartFill } from "react-icons/bs";
 import { useState } from "react";
 import axios from "axios";
 
+const bankOffers = {
+  bank_offers: [
+    {
+      name: "Bank Offer",
+      message:
+        "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above",
+    },
+    {
+      name: "Bank Offer",
+      message:
+        "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above",
+    },
+    {
+      name: "Bank Offer",
+      message:
+        "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above",
+    },
+    {
+      name: "Special Price",
+      message: "Get extra 2% off (price inclusive of cashback/coupon)",
+    },
+  ],
+};
+const description =
+  "Bring home this TV from realme and experience the stunning visuals that result from its Chroma Boost Picture Engine. Boasting a Bezel-less design and Dolby Surround Audio, this Android TV blends right into your decor and offers you audio performance that makes your favourite TV shows, movies, and other video content all the more enjoyable.";
+
 function ProductPage() {
   const toast = useToast();
   const [data, setData] = useState([]);
