@@ -48,6 +48,26 @@ import { useEffect } from "react";
 
 
 const Details = () => {
+
+
+  const bank_offers = [
+    {
+      "name": "Bank Offer",
+      "message": "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above"
+    },
+    {
+      "name": "Bank Offer",
+      "message": "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above"
+    },
+    {
+      "name": "Bank Offer",
+      "message": "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above"
+    },
+    {
+      "name": "Special Price",
+      "message": "Get extra 2% off (price inclusive of cashback/coupon)"
+    }
+  ]
   
   const [data, setData] = useState({});
 
@@ -231,7 +251,7 @@ const Details = () => {
             <Text fontWeight={500} fontSize={"15px"}>
               Available offers
             </Text>
-            {data?.bank_offers?.map((elem, i) => (
+            {bank_offers?.map((elem, i) => (
               <HStack key={i}>
                 <MdLocalOffer color="green" />
                 <Text fontSize={"14px"} noOfLines={1}>

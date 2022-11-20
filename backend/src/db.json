@@ -2,7 +2,6 @@
   {
     "name": "realme 80 cm (32 inch) HD Ready LED Smart Android TV  (TV 32)",
     "brand": "Realme",
-
     "stars": 4.4,
     "ratings": 228000,
     "reviews": 15000,
@@ -12,6 +11,7 @@
     "discount_percent": 22,
     "display_size": [32, 40, 50],
     "resolution": ["Full HD", "HD Ready", "Ultra HD(4K)", "Ultra HD(8K)"],
+
     "highlights": [
       "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
       "Operating System: Android (Google Assistant & Chromecast in-built)",
@@ -19,11 +19,46 @@
       "Sound Output: 24 W",
       "Refresh Rate: 60 Hz"
     ],
-    "seller": {
-      "name": "OmniTech Retail",
-      "stars": 4.7,
-      "otherinfo": ["10 Days Replacement Policy", "GST invoice available"]
-    },
+
+   
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
 
     "Ratings&Reviews": [
       [140007, 54058, 15464, 4624, 13944],
@@ -36,23 +71,22 @@
         }
       ]
     ],
-
-    "Review_image": ["abc", "def", "dhi"],
-
-    "comments": [
-      {
-        "star": 5,
-        "heading": "Worth every penny",
-        "description": "Item is good sound quality is good picture is good realme tv good",
-        "images": [
-          "https://rukminim1.flixcart.com/image/128/128/xif0q/television/h/a/r/-original-imaghgphdj9fsvzt.jpeg?q=70",
-          "https://rukminim1.flixcart.com/image/128/128/xif0q/television/3/u/p/-original-imaghgph8dzzmnaa.jpeg?q=70"
-        ],
-        "name": "Mayur",
-        "date": "Oct,2022",
-        "likes": 1999,
-        "dislikes": 200
-      }
+    "Ratings&Reviews": [
+      [140007, 54058, 15464, 4624, 13944],
+      [
+        {
+          "Picture": 4.2,
+          "Sound": 4.3,
+          "Connectivity": 3.9,
+          "Delivery & Installation": 4.0
+        }
+      ]
+    ],
+    
     ]
+
+   
+    
   }
+  
 ]

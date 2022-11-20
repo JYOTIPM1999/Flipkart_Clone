@@ -9,5 +9,5 @@ const userSchema = new mongoose.Schema({
   wish: { type: Boolean },
 });
 
-const TvModel = mongoose.model("tv", userSchema);
+const TvModel = mongoose.model("Tv", userSchema);
 module.exports = TvModel;
