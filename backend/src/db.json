@@ -75,7 +75,49 @@
     "discount_percent": 65,
     "ratings": 13195,
     "reviews": 1891,
-    "highlights": "Operating System: Android BasedHD Ready 1366 x 768 Pixels3 Years Standard Manufacturer Warranty from Adsun"
+    "highlights": "Operating System: Android BasedHD Ready 1366 x 768 Pixels3 Years Standard Manufacturer Warranty from Adsun",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Adsun 60 cm (24 inch) HD Ready LED TV",
@@ -87,7 +129,49 @@
     "discount_percent": 55,
     "ratings": 13195,
     "reviews": 6287,
-    "highlights": "HD Ready 1366 x 768 Pixels1 Year Warranty on Product"
+    "highlights": "HD Ready 1366 x 768 Pixels1 Year Warranty on Product",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
 
   {
@@ -100,7 +184,49 @@
     "discount_percent": 44,
     "ratings": 324434,
     "reviews": 30833,
-    "highlights": "Operating System: AndroidHD Ready 1366 x 768 Pixels1 Year Warranty on Product and 2 Years for Panel"
+    "highlights": "Operating System: AndroidHD Ready 1366 x 768 Pixels1 Year Warranty on Product and 2 Years for Panel",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
 
   {
@@ -113,7 +239,49 @@
     "discount_percent": 36,
     "ratings": 48391,
     "reviews": 4332,
-    "highlights": "Operating System: WebOSHD Ready 1366 x 768 Pixels1 Year LG India Comprehensive Warranty and additional 1 year Warranty is applicable on Panel/Module from the date of purchase."
+    "highlights": "Operating System: WebOSHD Ready 1366 x 768 Pixels1 Year LG India Comprehensive Warranty and additional 1 year Warranty is applicable on Panel/Module from the date of purchase.",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Infinix Y1 80 cm (32 inch) HD Ready LED Smart Linux TV",
@@ -125,7 +293,49 @@
     "discount_percent": 47,
     "ratings": 8695,
     "reviews": 1304,
-    "highlights": "Operating System: LinuxHD Ready 1366 x 768 Pixels1 Year Domestic Warranty"
+    "highlights": "Operating System: LinuxHD Ready 1366 x 768 Pixels1 Year Domestic Warranty",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "OnePlus Y1S 108 cm (43 inch) Full HD LED Smart Android TV with Android 11 and Bezel-Less Frame",
@@ -137,7 +347,49 @@
     "discount_percent": 21,
     "ratings": 134377,
     "reviews": 12397,
-    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Comprehensive Warranty and Additional 1 Year on Panel Provided By the Manufacturer From Date of Purchase."
+    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Comprehensive Warranty and Additional 1 Year on Panel Provided By the Manufacturer From Date of Purchase.",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Dyanora Sigma 108 cm (43 inch) Full HD LED Smart Linux TV with 40 Watt Box Speakers & Bezel-Less Desig...",
@@ -149,7 +401,49 @@
     "discount_percent": 51,
     "ratings": 70,
     "reviews": 8,
-    "highlights": "Operating System: LinuxFull HD 1920 x 1080 Pixels1 Year Manufacturer Warranty from the Date of Purchase"
+    "highlights": "Operating System: LinuxFull HD 1920 x 1080 Pixels1 Year Manufacturer Warranty from the Date of Purchase",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
 
   {
@@ -162,7 +456,49 @@
     "discount_percent": 26,
     "ratings": 324434,
     "reviews": 30833,
-    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Warranty on Product and 2 Years for Panel"
+    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Warranty on Product and 2 Years for Panel",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "SAMSUNG 80 cm (32 inch) HD Ready LED Smart Tizen TV",
@@ -174,7 +510,49 @@
     "discount_percent": 41,
     "ratings": 70644,
     "reviews": 6287,
-    "highlights": "Operating System: TizenHD Ready 1366 x 768 Pixels1 Year Comprehensive Warranty on Product and 1 Year Additional on Panel"
+    "highlights": "Operating System: TizenHD Ready 1366 x 768 Pixels1 Year Comprehensive Warranty on Product and 1 Year Additional on Panel",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Adsun 80 cm (32 inch) HD Ready LED TV",
@@ -186,7 +564,49 @@
     "discount_percent": 55,
     "ratings": 13195,
     "reviews": 1891,
-    "highlights": "HD Ready 1366 x 768 Pixels1 Year Warranty on Product"
+    "highlights": "HD Ready 1366 x 768 Pixels1 Year Warranty on Product",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Dyanora 80 cm (32 inch) HD Ready LED TV with Noise Reduction, Cinema Zoom, Powerful Audio Box Speakers",
@@ -198,7 +618,49 @@
     "discount_percent": 53,
     "ratings": 3789,
     "reviews": 488,
-    "highlights": "HD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase"
+    "highlights": "HD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Mi 5A 108 cm (43 inch) Full HD LED Smart Android TV with Dolby Audio (2022 Model)",
@@ -210,7 +672,49 @@
     "discount_percent": 30,
     "ratings": 324434,
     "reviews": 30833,
-    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Warranty on Product and 2 Years for Panel"
+    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Warranty on Product and 2 Years for Panel",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "OnePlus Y1S 80 cm (32 inch) HD Ready LED Smart Android TV with Android 11 and Bezel-Less Frame",
@@ -222,7 +726,49 @@
     "discount_percent": 27,
     "ratings": 134377,
     "reviews": 12397,
-    "highlights": "Operating System: AndroidHD Ready 1366 x 768 Pixels1 Year Comprehensive Warranty and Additional 1 Year on Panel Provided By the Manufacturer From Date of Purchase"
+    "highlights": "Operating System: AndroidHD Ready 1366 x 768 Pixels1 Year Comprehensive Warranty and Additional 1 Year on Panel Provided By the Manufacturer From Date of Purchase",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "realme 100.3 cm (40 inch) Full HD LED Smart Android TV",
@@ -234,7 +780,49 @@
     "discount_percent": 40,
     "ratings": 234351,
     "reviews": 26627,
-    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Domestic Warranty on Product and 2 Years on Panel"
+    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Domestic Warranty on Product and 2 Years on Panel",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Thomson Alpha 80 cm (32 inch) HD Ready LED Smart Linux TV with 30 W Sound Output & Bezel-Less Design",
@@ -246,7 +834,49 @@
     "discount_percent": 43,
     "ratings": 6309,
     "reviews": 1136,
-    "highlights": "Operating System: LinuxHD Ready 1366 x 768 Pixels1 Year Warranty on Product and 6 Months on Accessories"
+    "highlights": "Operating System: LinuxHD Ready 1366 x 768 Pixels1 Year Warranty on Product and 6 Months on Accessories",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Dyanora 108 cm (43 inch) Full HD LED Smart Android Based TV with Noise Reduction, Android 9.0, Google ...",
@@ -258,7 +888,49 @@
     "discount_percent": 51,
     "ratings": 3789,
     "reviews": 488,
-    "highlights": "Operating System: Android BasedFull HD 1080 x 1920 Pixels1 Year Manufacturer Warranty From The Date Of Purchase"
+    "highlights": "Operating System: Android BasedFull HD 1080 x 1920 Pixels1 Year Manufacturer Warranty From The Date Of Purchase",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Dyanora 60 cm (24 inch) HD Ready LED TV with Noise Reduction, Cinema Zoom, Powerful Audio Box Speakers",
@@ -270,7 +942,49 @@
     "discount_percent": 49,
     "ratings": 3789,
     "reviews": 488,
-    "highlights": "HD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase"
+    "highlights": "HD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Vu Premium 108 cm (43 inch) Ultra HD (4K) LED Smart Android TV",
@@ -282,7 +996,49 @@
     "discount_percent": 44,
     "ratings": 24376,
     "reviews": 3817,
-    "highlights": "Operating System: AndroidUltra HD (4K) 3840 x 2160 Pixels1 Year Domestic Warranty"
+    "highlights": "Operating System: AndroidUltra HD (4K) 3840 x 2160 Pixels1 Year Domestic Warranty",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "realme NEO 80 cm (32 inch) HD Ready LED Smart Linux TV",
@@ -294,7 +1050,49 @@
     "discount_percent": 45,
     "ratings": 33904,
     "reviews": 2966,
-    "highlights": "Operating System: LinuxHD Ready 1366 x 768 Pixels1 Year Warranty on Product and 2 Years Warranty on the Display Panel"
+    "highlights": "Operating System: LinuxHD Ready 1366 x 768 Pixels1 Year Warranty on Product and 2 Years Warranty on the Display Panel",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Dyanora 60 cm (24 inch) HD Ready LED Smart Android Based TV with Noise Reduction, Android 9.0, (1GB RA...",
@@ -306,7 +1104,49 @@
     "discount_percent": 46,
     "ratings": 3789,
     "reviews": 488,
-    "highlights": "Operating System: Android BasedHD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase"
+    "highlights": "Operating System: Android BasedHD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Dyanora 100 cm (40 inch) HD Ready LED Smart Android Based TV with Noise Reduction,Android 9.0,Google V...",
@@ -318,7 +1158,49 @@
     "discount_percent": 42,
     "ratings": 3789,
     "reviews": 488,
-    "highlights": "Operating System: Android BasedHD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase"
+    "highlights": "Operating System: Android BasedHD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "Mi X Series 108 cm (43 inch) Ultra HD (4K) LED Smart Android TV with Dolby Vision and 30W Dolby Audio ...",
@@ -330,7 +1212,49 @@
     "discount_percent": 32,
     "ratings": 3312,
     "reviews": 312,
-    "highlights": "Operating System: AndroidUltra HD (4K) 3840 x 2160 Pixels1 Year Warranty, 2 Years for Panel"
+    "highlights": "Operating System: AndroidUltra HD (4K) 3840 x 2160 Pixels1 Year Warranty, 2 Years for Panel",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   },
   {
     "name": "MarQ by Flipkart 60 cm (24 inch) HD Ready LED TV",
@@ -342,6 +1266,48 @@
     "discount_percent": 63,
     "ratings": 1292,
     "reviews": 154,
-    "highlights": "HD Ready 1366 x 768 Pixels1 Year Warranty"
+    "highlights": "HD Ready 1366 x 768 Pixels1 Year Warranty",
+    "general_specification": [
+      {
+        "head": "In The Box",
+        "info": "Canon"
+      },
+      {
+        "head": "Model Name",
+        "info": "1500D"
+      },
+      {
+        "head": "Color",
+        "info": "EOS"
+      },
+      {
+        "head": "SLR Variant",
+        "info": "1 Camera Body, 18-55 Lens"
+      },
+      {
+        "head": "Brand Color",
+        "info": "Black"
+      },
+      {
+        "head": "Type",
+        "info": "DSLR"
+      },
+      {
+        "head": "Color",
+        "info": "Black"
+      },
+      {
+        "head": "Effective Pixels",
+        "info": "18 Mp"
+      },
+      {
+        "head": "Tripod Socket",
+        "info": "Yes"
+      }
+    ],
+
+    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+
+    "review_image": ["abc", "def", "dhi"]
   }
 ]
