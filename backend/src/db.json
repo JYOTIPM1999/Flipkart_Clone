@@ -65,71 +65,283 @@
 
     "review_image": ["abc", "def", "dhi"]
   },
-
   {
     "name": "Adsun Smart Series 60 cm (24 inch) HD Ready LED Smart Android Based TV",
     "display_img": "https://rukminim1.flixcart.com/image/312/312/kzn17680/television/j/f/u/a-2440s-adsun-original-imagbhqzg9ea4cg5.jpeg?q=70",
-    "images": ["src", "src"],
     "brand": "Adsun",
     "stars": 3.8,
     "price": 6649,
-    "previous_price": 17999,
-    "discount_amount": 1500,
-    "discount_percent": 22,
-    "stars_count": [1200, 2500, 3500],
-    "circular_rating": [1200, 2500, 3500],
-    "ratings": 228000,
-    "reviews": 15000,
-    "display_size": [32, 40, 50],
-    "resolutions": ["Full HD", "HD Ready", "Ultra HD(4K)", "Ultra HD(8K)"],
-    "highlights": [
-      "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
-      "Operating System: Android (Google Assistant & Chromecast in-built)",
-      "Resolution: HD Ready 1366 x 768 Pixels",
-      "Sound Output: 24 W",
-      "Refresh Rate: 60 Hz"
-    ],
-    "general_specification": [
-      {
-        "head": "In The Box",
-        "info": "Canon"
-      },
-      {
-        "head": "Model Name",
-        "info": "1500D"
-      },
-      {
-        "head": "Color",
-        "info": "EOS"
-      },
-      {
-        "head": "SLR Variant",
-        "info": "1 Camera Body, 18-55 Lens"
-      },
-      {
-        "head": "Brand Color",
-        "info": "Black"
-      },
-      {
-        "head": "Type",
-        "info": "DSLR"
-      },
-      {
-        "head": "Color",
-        "info": "Black"
-      },
-      {
-        "head": "Effective Pixels",
-        "info": "18 Mp"
-      },
-      {
-        "head": "Tripod Socket",
-        "info": "Yes"
-      }
-    ],
+    "previous_price": 18999,
+    "discount_percent": 65,
+    "ratings": 13195,
+    "reviews": 1891,
+    "highlights": "Operating System: Android BasedHD Ready 1366 x 768 Pixels3 Years Standard Manufacturer Warranty from Adsun"
+  },
+  {
+    "name": "Adsun 60 cm (24 inch) HD Ready LED TV",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/krntoy80/television/h/i/m/a-2400n-adsun-original-imag5ecpqjfzews3.jpeg?q=70",
+    "brand": "Adsun",
+    "stars": 3.8,
+    "price": 5799,
+    "previous_price": 12999,
+    "discount_percent": 55,
+    "ratings": 13195,
+    "reviews": 6287,
+    "highlights": "HD Ready 1366 x 768 Pixels1 Year Warranty on Product"
+  },
 
-    "ratings&Reviews": [140007, 54058, 15464, 4624, 13944],
+  {
+    "name": "Mi 5A 80 cm (32 inch) HD Ready LED Smart Android TV with Dolby Audio (2022 Model)",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/xif0q/television/w/a/3/-original-imagg48gk4gzgsag.jpeg?q=70",
+    "brand": "Mi",
+    "stars": 4.3,
+    "price": 13999,
+    "previous_price": 24999,
+    "discount_percent": 44,
+    "ratings": 324434,
+    "reviews": 30833,
+    "highlights": "Operating System: AndroidHD Ready 1366 x 768 Pixels1 Year Warranty on Product and 2 Years for Panel"
+  },
 
-    "review_image": ["abc", "def", "dhi"]
+  {
+    "name": "LG 80 cm (32 inch) HD Ready LED Smart WebOS TV",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/l2ghgnk0/television/u/a/c/l32m7-5ain-mi-original-imagdsdwqf6bkmkz.jpeg?q=70",
+    "brand": "LG",
+    "stars": 4.4,
+    "price": 13990,
+    "previous_price": 21990,
+    "discount_percent": 36,
+    "ratings": 48391,
+    "reviews": 4332,
+    "highlights": "Operating System: WebOSHD Ready 1366 x 768 Pixels1 Year LG India Comprehensive Warranty and additional 1 year Warranty is applicable on Panel/Module from the date of purchase."
+  },
+  {
+    "name": "Infinix Y1 80 cm (32 inch) HD Ready LED Smart Linux TV",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/l0fm07k0/television/7/x/9/-original-imagc8fnpx39evgc.jpeg?q=70",
+    "brand": "Infinix",
+    "stars": 4.4,
+    "price": 8999,
+    "previous_price": 16999,
+    "discount_percent": 47,
+    "ratings": 8695,
+    "reviews": 1304,
+    "highlights": "Operating System: LinuxHD Ready 1366 x 768 Pixels1 Year Domestic Warranty"
+  },
+  {
+    "name": "OnePlus Y1S 108 cm (43 inch) Full HD LED Smart Android TV with Android 11 and Bezel-Less Frame",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/l572ufk0/television/e/f/g/32y1-32y1-infinix-original-imagfxczrxjjwxvf.jpeg?q=70",
+    "brand": "OnePlus",
+    "stars": 4.2,
+    "price": 24999,
+    "previous_price": 31999,
+    "discount_percent": 21,
+    "ratings": 134377,
+    "reviews": 12397,
+    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Comprehensive Warranty and Additional 1 Year on Panel Provided By the Manufacturer From Date of Purchase."
+  },
+  {
+    "name": "Dyanora Sigma 108 cm (43 inch) Full HD LED Smart Linux TV with 40 Watt Box Speakers & Bezel-Less Desig...",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/kzfvzww0/television/g/4/k/43fd2a00-43-y1s-oneplus-original-imagbgc44gerfphz.jpeg?q=70",
+    "brand": "Dyanora",
+    "stars": 4.3,
+    "price": 14499,
+    "previous_price": 29999,
+    "discount_percent": 51,
+    "ratings": 70,
+    "reviews": 8,
+    "highlights": "Operating System: LinuxFull HD 1920 x 1080 Pixels1 Year Manufacturer Warranty from the Date of Purchase"
+  },
+
+  {
+    "name": "Mi 5A 100 cm (40 inch) Full HD LED Smart Android TV with Dolby Audio (2022 Model)",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/xif0q/television/m/u/l/-original-imagg4egzf27zdmk.jpeg?q=70",
+    "brand": "Mi",
+    "stars": 3.8,
+    "price": 21999,
+    "previous_price": 29999,
+    "discount_percent": 26,
+    "ratings": 324434,
+    "reviews": 30833,
+    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Warranty on Product and 2 Years for Panel"
+  },
+  {
+    "name": "SAMSUNG 80 cm (32 inch) HD Ready LED Smart Tizen TV",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/l2ghgnk0/television/b/h/f/l40m7-eain-mi-original-imagdsdw9gkhscmb.jpeg?q=70",
+    "brand": "SAMSUNG",
+    "stars": 4.4,
+    "price": 13490,
+    "previous_price": 22900,
+    "discount_percent": 41,
+    "ratings": 70644,
+    "reviews": 6287,
+    "highlights": "Operating System: TizenHD Ready 1366 x 768 Pixels1 Year Comprehensive Warranty on Product and 1 Year Additional on Panel"
+  },
+  {
+    "name": "Adsun 80 cm (32 inch) HD Ready LED TV",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/kbs9k7k0/television/c/j/3/samsung-ua32t4340akxxl-original-imaft25qdysfsq7k.jpeg?q=70",
+    "brand": "Adsun",
+    "stars": 4.3,
+    "price": 7599,
+    "previous_price": 16999,
+    "discount_percent": 55,
+    "ratings": 13195,
+    "reviews": 1891,
+    "highlights": "HD Ready 1366 x 768 Pixels1 Year Warranty on Product"
+  },
+  {
+    "name": "Dyanora 80 cm (32 inch) HD Ready LED TV with Noise Reduction, Cinema Zoom, Powerful Audio Box Speakers",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/krntoy80/television/t/b/d/a-3200n-adsun-original-imag5ecyt6ystkrv.jpeg?q=70",
+    "brand": "Dyanora",
+    "stars": 3.8,
+    "price": 7399,
+    "previous_price": 15999,
+    "discount_percent": 53,
+    "ratings": 3789,
+    "reviews": 488,
+    "highlights": "HD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase"
+  },
+  {
+    "name": "Mi 5A 108 cm (43 inch) Full HD LED Smart Android TV with Dolby Audio (2022 Model)",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/ktvucnk0/television/8/n/i/dy-ld32h2s-dy-ld32h2s-dyanora-original-imag74htxjzpmafg.jpeg?q=70",
+    "brand": "Mi",
+    "stars": 4.1,
+    "price": 24999,
+    "previous_price": 35999,
+    "discount_percent": 30,
+    "ratings": 324434,
+    "reviews": 30833,
+    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Warranty on Product and 2 Years for Panel"
+  },
+  {
+    "name": "OnePlus Y1S 80 cm (32 inch) HD Ready LED Smart Android TV with Android 11 and Bezel-Less Frame",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/l2f20sw0/television/k/s/l/l43m7-eain-mi-original-imagdrtndgnrymr9.jpeg?q=70",
+    "brand": "OnePlus",
+    "stars": 4.4,
+    "price": 15999,
+    "previous_price": 21999,
+    "discount_percent": 27,
+    "ratings": 134377,
+    "reviews": 12397,
+    "highlights": "Operating System: AndroidHD Ready 1366 x 768 Pixels1 Year Comprehensive Warranty and Additional 1 Year on Panel Provided By the Manufacturer From Date of Purchase"
+  },
+  {
+    "name": "realme 100.3 cm (40 inch) Full HD LED Smart Android TV",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/kzfvzww0/television/e/b/b/32hd2a00-32-y1s-oneplus-original-imagbgcewfqywgk7.jpeg?q=70",
+    "brand": "realme",
+    "stars": 4.3,
+    "price": 18999,
+    "previous_price": 31999,
+    "discount_percent": 40,
+    "ratings": 234351,
+    "reviews": 26627,
+    "highlights": "Operating System: AndroidFull HD 1920 x 1080 Pixels1 Year Domestic Warranty on Product and 2 Years on Panel"
+  },
+  {
+    "name": "Thomson Alpha 80 cm (32 inch) HD Ready LED Smart Linux TV with 30 W Sound Output & Bezel-Less Design",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/l3uhvgw0/television/x/q/x/-original-imageuxkcg2fbdkg.jpeg?q=70",
+    "brand": "Thomson",
+    "stars": 4.3,
+    "price": 8499,
+    "previous_price": 14999,
+    "discount_percent": 43,
+    "ratings": 6309,
+    "reviews": 1136,
+    "highlights": "Operating System: LinuxHD Ready 1366 x 768 Pixels1 Year Warranty on Product and 6 Months on Accessories"
+  },
+  {
+    "name": "Dyanora 108 cm (43 inch) Full HD LED Smart Android Based TV with Noise Reduction, Android 9.0, Google ...",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/l51d30w0/television/1/k/j/-original-imagfsyu8nrz5gzg.jpeg?q=70",
+    "brand": "Dyanora",
+    "stars": 4.5,
+    "price": 15999,
+    "previous_price": 32999,
+    "discount_percent": 51,
+    "ratings": 3789,
+    "reviews": 488,
+    "highlights": "Operating System: Android BasedFull HD 1080 x 1920 Pixels1 Year Manufacturer Warranty From The Date Of Purchase"
+  },
+  {
+    "name": "Dyanora 60 cm (24 inch) HD Ready LED TV with Noise Reduction, Cinema Zoom, Powerful Audio Box Speakers",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/l2xmqvk0/television/s/t/8/dy-ld43f3s-dyanora-original-image65vxqgyndkh.jpeg?q=70",
+    "brand": "Dyanora",
+    "stars": 4.1,
+    "price": 5599,
+    "previous_price": 10999,
+    "discount_percent": 49,
+    "ratings": 3789,
+    "reviews": 488,
+    "highlights": "HD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase"
+  },
+  {
+    "name": "Vu Premium 108 cm (43 inch) Ultra HD (4K) LED Smart Android TV",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/l4ssfww0/television/8/1/x/-original-imagfm4bjkgbzxky.jpeg?q=70",
+    "brand": "Vu",
+    "stars": 4.1,
+    "price": 24999,
+    "previous_price": 45000,
+    "discount_percent": 44,
+    "ratings": 24376,
+    "reviews": 3817,
+    "highlights": "Operating System: AndroidUltra HD (4K) 3840 x 2160 Pixels1 Year Domestic Warranty"
+  },
+  {
+    "name": "realme NEO 80 cm (32 inch) HD Ready LED Smart Linux TV",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/xif0q/television/v/2/b/-original-imaggjzuhzv6zhby.jpeg?q=70",
+    "brand": "realme",
+    "stars": 4.4,
+    "price": 11999,
+    "previous_price": 21999,
+    "discount_percent": 45,
+    "ratings": 33904,
+    "reviews": 2966,
+    "highlights": "Operating System: LinuxHD Ready 1366 x 768 Pixels1 Year Warranty on Product and 2 Years Warranty on the Display Panel"
+  },
+  {
+    "name": "Dyanora 60 cm (24 inch) HD Ready LED Smart Android Based TV with Noise Reduction, Android 9.0, (1GB RA...",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/kulk9zk0/television/a/k/g/rmv2101-realme-original-imag7zh4etze62zy.jpeg?q=70",
+    "brand": "Dyanora",
+    "stars": 4.3,
+    "price": 6999,
+    "previous_price": 12999,
+    "discount_percent": 46,
+    "ratings": 3789,
+    "reviews": 488,
+    "highlights": "Operating System: Android BasedHD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase"
+  },
+  {
+    "name": "Dyanora 100 cm (40 inch) HD Ready LED Smart Android Based TV with Noise Reduction,Android 9.0,Google V...",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/xif0q/television/4/p/j/-original-imaggstztckgjet4.jpeg?q=70",
+    "brand": "Dyanora",
+    "stars": 4.1,
+    "price": 13899,
+    "previous_price": 23999,
+    "discount_percent": 42,
+    "ratings": 3789,
+    "reviews": 488,
+    "highlights": "Operating System: Android BasedHD Ready 1366 x 768 Pixels1 Year Manufacturer Warranty from the Date of Purchase"
+  },
+  {
+    "name": "Mi X Series 108 cm (43 inch) Ultra HD (4K) LED Smart Android TV with Dolby Vision and 30W Dolby Audio ...",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/l4n2oi80/television/p/1/a/-original-imagfhuh3fpxgsug.jpeg?q=70",
+    "brand": "Mi",
+    "stars": 4.1,
+    "price": 28999,
+    "previous_price": 42999,
+    "discount_percent": 32,
+    "ratings": 3312,
+    "reviews": 312,
+    "highlights": "Operating System: AndroidUltra HD (4K) 3840 x 2160 Pixels1 Year Warranty, 2 Years for Panel"
+  },
+  {
+    "name": "MarQ by Flipkart 60 cm (24 inch) HD Ready LED TV",
+    "display_img": "https://rukminim1.flixcart.com/image/312/312/xif0q/television/5/c/k/-original-imaggsnkne4n5mvh.jpeg?q=70",
+    "brand": "MarQ",
+    "stars": 4.3,
+    "price": 5499,
+    "previous_price": 14999,
+    "discount_percent": 63,
+    "ratings": 1292,
+    "reviews": 154,
+    "highlights": "HD Ready 1366 x 768 Pixels1 Year Warranty"
   }
 ]
