@@ -66,6 +66,12 @@ function ProductPage() {
       isClosable: true,
     });
   };
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/tv/lth")
+      .then((res) => console.log(res.data));
+  }, []);
+
   console.log(data);
   return (
     <>
@@ -91,7 +97,7 @@ function ProductPage() {
               />
             </Box>
             <Box alignItems="center" m={"auto"}>
-              <Image src={el.imglink} w="80%" />
+              <Image src={el.display_img} w="80%" />
             </Box>
             <Checkbox mt={"40px"}>Add to compare</Checkbox>
           </Box>
