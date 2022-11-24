@@ -48,9 +48,9 @@ function ProductPage() {
   const toast = useToast();
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios.get("http://localhost:8080/").then((res) => setData(res.data));
-  }, []);
+  // useEffect(() => {
+  //   axios.get("http://localhost:8080/").then((res) => setData(res.data));
+  // }, []);
 
   const handleClick = (id, wish) => {
     axios.post(`http://localhost:8080/${id}`, { wishlist: !wish }).then((res) =>
@@ -66,6 +66,10 @@ function ProductPage() {
       isClosable: true,
     });
   };
+  useEffect(() => {
+    axios.get("http://localhost:8080/tv/lth").then((res) => setData(res.data));
+  }, []);
+
   console.log(data);
   return (
     <>
@@ -91,7 +95,7 @@ function ProductPage() {
               />
             </Box>
             <Box alignItems="center" m={"auto"}>
-              <Image src={el.imglink} w="80%" />
+              <Image src={el.display_img} w="80%" />
             </Box>
             <Checkbox mt={"40px"}>Add to compare</Checkbox>
           </Box>
