@@ -48,9 +48,9 @@ function ProductPage() {
   const toast = useToast();
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios.get("http://localhost:8080/").then((res) => setData(res.data));
-  }, []);
+  // useEffect(() => {
+  //   axios.get("http://localhost:8080/").then((res) => setData(res.data));
+  // }, []);
 
   const handleClick = (id, wish) => {
     axios.post(`http://localhost:8080/${id}`, { wishlist: !wish }).then((res) =>
@@ -67,9 +67,7 @@ function ProductPage() {
     });
   };
   useEffect(() => {
-    axios
-      .get("http://localhost:8080/tv/lth")
-      .then((res) => console.log(res.data));
+    axios.get("http://localhost:8080/tv/lth").then((res) => setData(res.data));
   }, []);
 
   console.log(data);
