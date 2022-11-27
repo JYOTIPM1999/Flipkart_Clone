@@ -17,7 +17,7 @@ import { AiFillStar } from "react-icons/ai";
 import { BsFillHeartFill } from "react-icons/bs";
 import { useState } from "react";
 import axios from "axios";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 // const bankOffers = {
 //   bank_offers: [
@@ -42,19 +42,17 @@ import {useNavigate} from "react-router-dom"
 //     },
 //   ],
 // };
-const description =
-  "Bring home this TV from realme and experience the stunning visuals that result from its Chroma Boost Picture Engine. Boasting a Bezel-less design and Dolby Surround Audio, this Android TV blends right into your decor and offers you audio performance that makes your favourite TV shows, movies, and other video content all the more enjoyable.";
 
 function ProductPage() {
   const toast = useToast();
   const [data, setData] = useState([]);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get("http://localhost:8080/tv").then((res) => setData(res.data));
   }, []);
 
-  const handleClick = (id, wish) => {
+  const handleWishlist = (id, wish) => {
     axios.post(`http://localhost:8080/${id}`, { wishlist: !wish }).then((res) =>
       axios.get("http://localhost:8080/").then((res) => {
         setData(res.data);
@@ -69,19 +67,29 @@ function ProductPage() {
     });
   };
 
- const handleNavigate = (id) => {
-    navigate(`/productpage/${id}`)
- }
-  useEffect(() => {
-    axios.get("http://localhost:8080/tv/lth").then((res) => setData(res.data));
-  }, []);
+  const handleNavigate = (id) => {
+    navigate(`/productpage/${id}`);
+  };
+  const handleSortrelevance = () => {
+    axios.get("http://localhost:8080/tv").then((res) => setData(res.data));
+  };
+
+  const handleSort = (id) => {
+    axios
+      .get(`http://localhost:8080/tv/${id}`)
+      .then((res) => setData(res.data));
+  };
 
   console.log(data);
   return (
     <>
+      <HStack gap={"20px"}>
+        <Text onClick={handleSortrelevance}>Relevance</Text>
+        <Text onClick={() => handleSort("lth")}>Sort by Low to High</Text>
+        <Text onClick={() => handleSort("htl")}>Sort by High to Low</Text>
+      </HStack>
       {data.map((el, i) => (
         <Box
-          
           key={i}
           border="1px "
           borderColor={"gray.300"}
@@ -93,7 +101,7 @@ function ProductPage() {
           <Box w={"20%"}>
             <Box
               ml={"90%"}
-              onClick={() => handleClick(el._id, el.wish)}
+              onClick={() => handleWishlist(el._id, el.wish)}
               mb="10px"
             >
               <BsFillHeartFill
@@ -108,7 +116,12 @@ function ProductPage() {
           </Box>
 
           <Stack w={"50%"}>
-            <Text cursor={"pointer"} onClick={()=>handleNavigate(el._id)}  fontSize={"lg"} fontWeight="600">
+            <Text
+              cursor={"pointer"}
+              onClick={() => handleNavigate(el._id)}
+              fontSize={"lg"}
+              fontWeight="600"
+            >
               {el.name}
             </Text>
             <HStack spacing={1} alignItems="center">
@@ -116,10 +129,10 @@ function ProductPage() {
                 {el.stars} <AiFillStar />
               </Box>
               <Text fontSize={"14px"} color="gray" fontWeight={"500"}>
-                {el.ratings.toLocaleString("en-US") } Ratings &
+                {el.ratings.toLocaleString("en-US")} Ratings &
               </Text>
               <Text fontSize={"14px"} color="gray" fontWeight={"500"}>
-                {el.reviews.toLocaleString("en-US") } Reviews
+                {el.reviews.toLocaleString("en-US")} Reviews
               </Text>
             </HStack>
             <VStack align={""}>

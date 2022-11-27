@@ -45,42 +45,41 @@ import Rating from "./Rating&Review";
 import Review from "./Review";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import image from "../../img/videobutton.png"
-
-
+import image from "../../img/videobutton.png";
 
 const Details = () => {
-
-
   const bank_offers = [
     {
-      "name": "Bank Offer",
-      "message": "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above"
+      name: "Bank Offer",
+      message:
+        "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above",
     },
     {
-      "name": "Bank Offer",
-      "message": "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above"
+      name: "Bank Offer",
+      message:
+        "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above",
     },
     {
-      "name": "Bank Offer",
-      "message": "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above"
+      name: "Bank Offer",
+      message:
+        "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above",
     },
     {
-      "name": "Special Price",
-      "message": "Get extra 2% off (price inclusive of cashback/coupon)"
-    }
-  ]
-  
+      name: "Special Price",
+      message: "Get extra 2% off (price inclusive of cashback/coupon)",
+    },
+  ];
+
   const [data, setData] = useState({});
 
   const [img, setImg] = useState();
   const [vid, setVid] = useState(false);
 
   const [wish, setWish] = useState(false);
-  const [id, setId] = useState("63725feb4c2eed1d06721ab2")
+  const [id, setId] = useState("63725feb4c2eed1d06721ab2");
 
   const toast = useToast();
-  const params = useParams()
+  const params = useParams();
 
   const handleWish = () => {
     setWish(!wish);
@@ -103,34 +102,44 @@ const Details = () => {
     setImg(elem);
   };
 
-  useEffect(()=>{
-  
-  axios.get(`http://localhost:8080/tv/singlepage?id=${params.id}`).then(res=>{
-  console.log(res.data)  
-  setData(res.data)
-  setImg(res.data.images[0])
-  
-    
-  })
-  },[])
+  useEffect(() => {
+    axios
+      .get(`http://localhost:8080/tv/singlepage?id=${params.id}`)
+      .then((res) => {
+        console.log(res.data);
+        setData(res.data);
+        setImg(res.data.images[0]);
+      });
+  }, []);
 
- 
   return (
     <>
       <Box p={"10px"} h="auto" display={"flex"} position="relative" zIndex={1}>
-        <Box w={"40%"} h="90vh" position={"sticky"} top={"10px"} display="flex" border="2px" borderColor="gray.200" >
-          <Box border={"1px solid white"} w={"15%"} h="100%" overflow={"scroll"} >
+        <Box
+          w={"40%"}
+          h="90vh"
+          position={"sticky"}
+          top={"10px"}
+          display="flex"
+          border="2px"
+          borderColor="gray.200"
+        >
+          <Box
+            border={"1px solid white"}
+            w={"15%"}
+            h="100%"
+            overflow={"scroll"}
+          >
             {data?.images?.map((elem, i) => (
               <Box
                 mb={"5px"}
                 _hover={{ border: "2px", borderColor: "#2874f0" }}
                 border="2px solid white"
-                
                 key={i}
                 onMouseOver={() => handleChange(elem)}
               >
                 <Image
-                border={"1px solid white"}
+                  border={"1px solid white"}
                   m={"auto"}
                   mb={"10px"}
                   w={"50px"}
@@ -142,33 +151,42 @@ const Details = () => {
 
           {/* large image */}
 
-          <Box border={"1px solid white"} p={"10px"} w="85%" h={"100%"} position="relative" >
-          <Box display={"flex"} justifyContent="end" border={"1px solid white"} onClick={handleWish}  >
+          <Box
+            border={"1px solid white"}
+            p={"10px"}
+            w="85%"
+            h={"100%"}
+            position="relative"
+          >
+            <Box
+              display={"flex"}
+              justifyContent="end"
+              border={"1px solid white"}
+              onClick={handleWish}
+            >
               <AiFillHeart color={wish ? "red" : "gray"} size={"30px"} />
-           </Box>
+            </Box>
 
             {vid && (
               <Box>
-              <AspectRatio mb={"10px"} W="95%" h={"390px"} ratio={1}>
-                <iframe src={img.link} title={img.type} />
-              </AspectRatio>
+                <AspectRatio mb={"10px"} W="95%" h={"390px"} ratio={1}>
+                  <iframe src={img.link} title={img.type} />
+                </AspectRatio>
               </Box>
             )}
 
             {!vid && (
-              <Box border={"1px solid white"} h={"400px"} >
-              <Image
-                border={"1px"}
-                borderColor="white"
-                // pt={"0px"}
-                // pb="30px"
-                // mt={"20px"}
-                m={"auto"}
-                h="85%"
-                       
-                
-               src={img?img.link:""}
-              ></Image>
+              <Box border={"1px solid white"} h={"400px"}>
+                <Image
+                  border={"1px"}
+                  borderColor="white"
+                  // pt={"0px"}
+                  // pb="30px"
+                  // mt={"20px"}
+                  m={"auto"}
+                  h="85%"
+                  src={img ? img.link : ""}
+                ></Image>
               </Box>
             )}
 
@@ -189,167 +207,173 @@ const Details = () => {
               />
             </HStack>
             {/* add to wishlist */}
-            
           </Box>
         </Box>
 
         {/* details */}
 
-       
-       {
-
-
-       data && <Box  w={"60%"} h="auto" p={"0px 5px"}>
-          <VStack
-            spacing={"17px"}
-            p={"5px"}
-            align={"Left"}
-            border={"1px"}
-            borderColor={"gray.200"}
-          >
-            <Breadcrumb
-              fontSize={"13px"}
-              separator={<ChevronRightIcon />}
-              color={"gray.500"}
+        {data && (
+          <Box w={"60%"} h="auto" p={"0px 5px"}>
+            <VStack
+              spacing={"17px"}
+              p={"5px"}
+              align={"Left"}
+              border={"1px"}
+              borderColor={"gray.200"}
             >
-              <BreadcrumbItem>
-                <BreadcrumbLink href="#">Home</BreadcrumbLink>
-              </BreadcrumbItem>
-
-              <BreadcrumbItem>
-                <BreadcrumbLink href="#">Computer</BreadcrumbLink>
-              </BreadcrumbItem>
-
-              <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink href="#">Canon EOS..</BreadcrumbLink>
-              </BreadcrumbItem>
-            </Breadcrumb>
-
-            <Text textAlign={"Left"} fontSize="20px">
-              {data.name}
-            </Text>
-
-            <HStack spacing={"10px"}>
-              <Button
-                borderRadius={2}
-                w={"45px"}
-                h="20px"
+              <Breadcrumb
                 fontSize={"13px"}
-                rightIcon={<StarIcon w={"10px"} />}
-                colorScheme={"green"}
-              >
-                {data.stars}
-              </Button>
-              <Text color={"gray.500"} fontSize={"13px"}>
-               { `${data?.ratings?.toLocaleString('en-US')} Ratings & ${data?.reviews?.toLocaleString()} Reviews` }
-              </Text>
-              <Image w={"65px"} src="assured.png"></Image>
-            </HStack>
-
-            <Text fontWeight={500} fontSize={"15px"} color={"green"}>
-              Special price
-            </Text>
-            <HStack>
-              <Text fontSize={"3xl"}>{`₹${data?.price?.toLocaleString()}`}</Text>
-              <Text
-                fontSize={"14px"}
+                separator={<ChevronRightIcon />}
                 color={"gray.500"}
-                as={"s"}
-              >{`₹${data?.discount_amount}`}</Text>
-              <Text fontSize={"14px"} color={"gray.500"}>{`${data?.discount_rate?.toLocaleString()}% off`}</Text>
-              <InfoOutlineIcon color={"gray.500"} />
-            </HStack>
+              >
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="#">Home</BreadcrumbLink>
+                </BreadcrumbItem>
 
-            <Text fontWeight={500} fontSize={"15px"}>
-              Available offers
-            </Text>
-            {bank_offers?.map((elem, i) => (
-              <HStack key={i}>
-                <MdLocalOffer color="green" />
-                <Text fontSize={"14px"} noOfLines={1}>
-                  <span style={{ fontWeight: "500" }}>{elem.name}</span>
-                  {elem.message}
-                  <span style={{ color: "#3583f0", fontWeight: 500 }}>
-                    {" "}
-                    T&C
-                  </span>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="#">Computer</BreadcrumbLink>
+                </BreadcrumbItem>
+
+                <BreadcrumbItem isCurrentPage>
+                  <BreadcrumbLink href="#">Canon EOS..</BreadcrumbLink>
+                </BreadcrumbItem>
+              </Breadcrumb>
+
+              <Text textAlign={"Left"} fontSize="20px">
+                {data.name}
+              </Text>
+
+              <HStack spacing={"10px"}>
+                <Button
+                  borderRadius={2}
+                  w={"45px"}
+                  h="20px"
+                  fontSize={"13px"}
+                  rightIcon={<StarIcon w={"10px"} />}
+                  colorScheme={"green"}
+                >
+                  {data.stars}
+                </Button>
+                <Text color={"gray.500"} fontSize={"13px"}>
+                  {`${data?.ratings?.toLocaleString(
+                    "en-US"
+                  )} Ratings & ${data?.reviews?.toLocaleString()} Reviews`}
                 </Text>
+                <Image w={"65px"} src="assured.png"></Image>
               </HStack>
-            ))}
 
-            <HStack spacing={100}>
-              <Text fontWeight={500} color="gray.500" fontSize={"14px"}>
-                Delivery
+              <Text fontWeight={500} fontSize={"15px"} color={"green"}>
+                Special price
               </Text>
               <HStack>
-                {" "}
-                <GoLocation />
-                <Input
-                  type="number"
-                  variant="flushed"
-                  width={200}
-                  placeholder={` Enter Delivery Pincode`}
-                />
-                <Button colorScheme={"white"} color={"#3583f0"}>
-                  Check
-                </Button>
+                <Text
+                  fontSize={"3xl"}
+                >{`₹${data?.price?.toLocaleString()}`}</Text>
+                <Text
+                  fontSize={"14px"}
+                  color={"gray.500"}
+                  as={"s"}
+                >{`₹${data?.previous_price}`}</Text>
+                <Text
+                  fontSize={"14px"}
+                  color={"gray.500"}
+                >{`${data?.discount_percent?.toLocaleString()}% off`}</Text>
+                <InfoOutlineIcon color={"gray.500"} />
               </HStack>
-            </HStack>
 
-            <HStack spacing={100}>
-              <Text fontWeight={500} color="gray.500" fontSize={"14px"}>
-                Highlights
+              <Text fontWeight={500} fontSize={"15px"}>
+                Available offers
               </Text>
+              {bank_offers?.map((elem, i) => (
+                <HStack key={i}>
+                  <MdLocalOffer color="green" />
+                  <Text fontSize={"14px"} noOfLines={1}>
+                    <span style={{ fontWeight: "500" }}>{elem.name}</span>
+                    {elem.message}
+                    <span style={{ color: "#3583f0", fontWeight: 500 }}>
+                      {" "}
+                      T&C
+                    </span>
+                  </Text>
+                </HStack>
+              ))}
 
-              <UnorderedList>
-                {data?.highlights?.map((elem, i) => (
-                  <ListItem key={i}>{elem}</ListItem>
-                ))}
-              </UnorderedList>
-            </HStack>
-
-            <Text fontSize={30}>Specifications</Text>
-
-            {data?.general_specification?.map((elem, i) => (
-              <HStack key={i}>
-                <Box w={200} border="1px" borderColor="white">
-                  <Heading
-                    fontWeight={500}
-                    color={"gray.500"}
-                    fontSize={"14px"}
-                  >
-                    {elem.head}
-                  </Heading>
-                </Box>
-
-                <Text textAlign={"left"}>{elem.info}</Text>
+              <HStack spacing={100}>
+                <Text fontWeight={500} color="gray.500" fontSize={"14px"}>
+                  Delivery
+                </Text>
+                <HStack>
+                  {" "}
+                  <GoLocation />
+                  <Input
+                    type="number"
+                    variant="flushed"
+                    width={200}
+                    placeholder={` Enter Delivery Pincode`}
+                  />
+                  <Button colorScheme={"white"} color={"#3583f0"}>
+                    Check
+                  </Button>
+                </HStack>
               </HStack>
-            ))}
-          </VStack>
-          {/* Ratings and Rewiews  */}
-          <Box
-            marginTop="20px"
-            height={"auto"}
-            border={"1px"}
-            width="100%"
-            borderColor={"gray.300"}
-          >
-            {/* rating component */}
-            <Rating rate={data?.rating} tr={data?.reviews} rat={data?.stars_count} cr={data?.circular_rating} />
-            <Divider />
-            <Review />
-            <Review />
-            <Review />
-            <Review />
-            <Review />
-          </Box>
-        </Box>
-        }
-      </Box>
-            
-      <Box w={"100%"} h="500px" border={"6px"} borderColor="red"></Box>
 
-            
+              <HStack spacing={100}>
+                <Text fontWeight={500} color="gray.500" fontSize={"14px"}>
+                  Highlights
+                </Text>
+
+                <UnorderedList>
+                  {data?.highlights?.map((elem, i) => (
+                    <ListItem key={i}>{elem}</ListItem>
+                  ))}
+                </UnorderedList>
+              </HStack>
+
+              <Text fontSize={30}>Specifications</Text>
+
+              {data?.general_specification?.map((elem, i) => (
+                <HStack key={i}>
+                  <Box w={200} border="1px" borderColor="white">
+                    <Heading
+                      fontWeight={500}
+                      color={"gray.500"}
+                      fontSize={"14px"}
+                    >
+                      {elem.head}
+                    </Heading>
+                  </Box>
+
+                  <Text textAlign={"left"}>{elem.info}</Text>
+                </HStack>
+              ))}
+            </VStack>
+            {/* Ratings and Rewiews  */}
+            <Box
+              marginTop="20px"
+              height={"auto"}
+              border={"1px"}
+              width="100%"
+              borderColor={"gray.300"}
+            >
+              {/* rating component */}
+              <Rating
+                rate={data?.rating}
+                tr={data?.reviews}
+                rat={data?.stars_count}
+                cr={data?.circular_rating}
+              />
+              <Divider />
+              <Review />
+              <Review />
+              <Review />
+              <Review />
+              <Review />
+            </Box>
+          </Box>
+        )}
+      </Box>
+
+      <Box w={"100%"} h="500px" border={"6px"} borderColor="red"></Box>
     </>
   );
 };
