@@ -72,9 +72,11 @@ function ProductPage() {
  const handleNavigate = (id) => {
     navigate(`/productpage/${id}`)
  }
- 
+  useEffect(() => {
+    axios.get("http://localhost:8080/tv/lth").then((res) => setData(res.data));
+  }, []);
 
-  // console.log(data);
+  console.log(data);
   return (
     <>
       {data.map((el, i) => (

@@ -13,15 +13,15 @@ import { AllRoutes } from "./Routes/AllRoutes";
 function App() {
   return (
     <div className="App">
-    <AllRoutes/>
+      <AllRoutes/>
       {/* <HomePage /> */}
-      {/* <ProductsMerge /> */}
+      <ProductsMerge />
       {/* <CartMerge /> */}
      {/* <Details />  */}
       {/* <Footer /> */}
       {/* <Signup /> */}
      <Button>  <Link to={"productpage"}>Product page</Link></Button>
-      
+     <Signup /> */}
     </div>
   );
 }
