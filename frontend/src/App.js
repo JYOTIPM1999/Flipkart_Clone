@@ -1,6 +1,7 @@
 import { Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import "./App.css";
+import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 
 import CartMerge from "./pages/CartPage/CartMerge";
@@ -13,16 +14,17 @@ import { AllRoutes } from "./Routes/AllRoutes";
 function App() {
   return (
     <div className="App">
-      <AllRoutes />
+      <Navbar />
+      {/* <AllRoutes /> */}
       {/* <HomePage /> */}
       {/* <ProductsMerge /> */}
       {/* <CartMerge /> */}
       {/* <Details />  */}
       {/* <Footer /> */}
       {/* <Signup /> */}
-      <Button>
+      {/* <Button>
         <Link to={"productpage"}>Product page</Link>
-      </Button>
+      </Button> */}
       {/* <Signup /> */}
     </div>
   );
