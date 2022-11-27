@@ -17,40 +17,42 @@ import { AiFillStar } from "react-icons/ai";
 import { BsFillHeartFill } from "react-icons/bs";
 import { useState } from "react";
 import axios from "axios";
+import {useNavigate} from "react-router-dom"
 
-const bankOffers = {
-  bank_offers: [
-    {
-      name: "Bank Offer",
-      message:
-        "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above",
-    },
-    {
-      name: "Bank Offer",
-      message:
-        "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above",
-    },
-    {
-      name: "Bank Offer",
-      message:
-        "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above",
-    },
-    {
-      name: "Special Price",
-      message: "Get extra 2% off (price inclusive of cashback/coupon)",
-    },
-  ],
-};
+// const bankOffers = {
+//   bank_offers: [
+//     {
+//       name: "Bank Offer",
+//       message:
+//         "Additional ₹750 discount on SBI Credit Card and EMI txns on net cart value of INR 29,999 and above",
+//     },
+//     {
+//       name: "Bank Offer",
+//       message:
+//         "Additional ₹1,000 discount on SBI Credit Card and EMI txns on net cart value of INR 39,999 and above",
+//     },
+//     {
+//       name: "Bank Offer",
+//       message:
+//         "Additional ₹4,000 discount on SBI Credit Card and EMI txns on net cart value of INR 79,999 and above",
+//     },
+//     {
+//       name: "Special Price",
+//       message: "Get extra 2% off (price inclusive of cashback/coupon)",
+//     },
+//   ],
+// };
 const description =
   "Bring home this TV from realme and experience the stunning visuals that result from its Chroma Boost Picture Engine. Boasting a Bezel-less design and Dolby Surround Audio, this Android TV blends right into your decor and offers you audio performance that makes your favourite TV shows, movies, and other video content all the more enjoyable.";
 
 function ProductPage() {
   const toast = useToast();
   const [data, setData] = useState([]);
+  const navigate = useNavigate()
 
-  // useEffect(() => {
-  //   axios.get("http://localhost:8080/").then((res) => setData(res.data));
-  // }, []);
+  useEffect(() => {
+    axios.get("http://localhost:8080/tv").then((res) => setData(res.data));
+  }, []);
 
   const handleClick = (id, wish) => {
     axios.post(`http://localhost:8080/${id}`, { wishlist: !wish }).then((res) =>
@@ -66,6 +68,10 @@ function ProductPage() {
       isClosable: true,
     });
   };
+
+ const handleNavigate = (id) => {
+    navigate(`/productpage/${id}`)
+ }
   useEffect(() => {
     axios.get("http://localhost:8080/tv/lth").then((res) => setData(res.data));
   }, []);
@@ -75,6 +81,7 @@ function ProductPage() {
     <>
       {data.map((el, i) => (
         <Box
+          
           key={i}
           border="1px "
           borderColor={"gray.300"}
@@ -101,18 +108,18 @@ function ProductPage() {
           </Box>
 
           <Stack w={"50%"}>
-            <Text fontSize={"lg"} fontWeight="600">
+            <Text cursor={"pointer"} onClick={()=>handleNavigate(el._id)}  fontSize={"lg"} fontWeight="600">
               {el.name}
             </Text>
             <HStack spacing={1} alignItems="center">
               <Box className={styles.stardiv}>
-                {el.rating} <AiFillStar />
+                {el.stars} <AiFillStar />
               </Box>
               <Text fontSize={"14px"} color="gray" fontWeight={"500"}>
-                10000 Ratings &
+                {el.ratings.toLocaleString("en-US") } Ratings &
               </Text>
               <Text fontSize={"14px"} color="gray" fontWeight={"500"}>
-                2500 Reviews
+                {el.reviews.toLocaleString("en-US") } Reviews
               </Text>
             </HStack>
             <VStack align={""}>
@@ -137,14 +144,14 @@ function ProductPage() {
             </HStack>
             <HStack gap="10px">
               <Text fontSize={"16px"} color="gray" as="s">
-                ₹29900
+                ₹ {el.previous_price}
               </Text>
               <Text
                 fontSize={"16px"}
                 color="rgb(38, 165, 65)"
                 fontWeight={"600"}
               >
-                70% off
+                {el.discount_percent}% off
               </Text>
             </HStack>
             <Text fontSize={"12px"}>Free delivery</Text>

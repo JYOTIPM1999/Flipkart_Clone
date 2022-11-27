@@ -21,9 +21,9 @@ const userSchema = new mongoose.Schema({
   reviews: { type: Number, required: true },
   display_size: { type: [Number], required: true },
   resolutions: { type: [String], required: true },
-  highlights: { type: [String], required: true },
+  
   general_specification: [{ head: String, info: String }],
-  ratingsreview: { type: [Number], required: true },
+  
   review_image: [{ type: [String] }],
 });
 

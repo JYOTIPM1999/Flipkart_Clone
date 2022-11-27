@@ -1,17 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import React from "react";
-import ProductPage from "../Jyoti/ProductPage/ProductPage";
-import Details from "../../components/Utkarsh/Details";
-
+import Details from "../pages/SinglePage/Details";
+import ProductsMerge from "../pages/TVPage/ProductsMerge";
 export const AllRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<h1>Homepage</h1>} />
-      <Route path="/productpage" element={<ProductPage />} />
-      <Route path="/productpage/:id" element={<Details />} />
-      {/* <Route path="" element={}/>
-      <Route path="" element={}/>
-      <Route path="" element={}/> */}
+      <Route path="/productpage" element={<ProductsMerge />} />
+      <Route path="/productpage/:id" element={<Details/>} />
     </Routes>
   );
 };
