@@ -259,7 +259,7 @@ const Details = () => {
                     "en-US"
                   )} Ratings & ${data?.reviews?.toLocaleString()} Reviews`}
                 </Text>
-                <Image w={"65px"} src="assured.png"></Image>
+                <Image w={"65px"} src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"></Image>
               </HStack>
 
               <Text fontWeight={500} fontSize={"15px"} color={"green"}>
