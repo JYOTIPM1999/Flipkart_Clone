@@ -6,7 +6,8 @@ import Signup from "./components/Signup";
 
 import CartMerge from "./pages/CartPage/CartMerge";
 import Footer from "./pages/Homepage/Footer";
-import Homepage from "./pages/Homepage/Homepage";
+import HomePage from "./pages/Homepage/HomePage";
+import HomeSlider from "./pages/Homepage/SliderComp";
 
 import Details from "./pages/SinglePage/Details";
 import ProductsMerge from "./pages/TVPage/ProductsMerge";
@@ -16,9 +17,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <HomePage />
+      {/* <HomeSlider /> */}
       {/* <AllRoutes /> */}
-      <Homepage/>
-    
+
       {/* <ProductsMerge /> */}
       {/* <CartMerge /> */}
       {/* <Details />  */}

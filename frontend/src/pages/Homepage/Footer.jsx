@@ -9,7 +9,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
-import styles from "./main.module.css";
 
 function Footer() {
   return (
