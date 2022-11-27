@@ -42,8 +42,6 @@ import { useNavigate } from "react-router-dom";
 //     },
 //   ],
 // };
-const description =
-  "Bring home this TV from realme and experience the stunning visuals that result from its Chroma Boost Picture Engine. Boasting a Bezel-less design and Dolby Surround Audio, this Android TV blends right into your decor and offers you audio performance that makes your favourite TV shows, movies, and other video content all the more enjoyable.";
 
 function ProductPage() {
   const toast = useToast();
@@ -54,7 +52,7 @@ function ProductPage() {
     axios.get("http://localhost:8080/tv").then((res) => setData(res.data));
   }, []);
 
-  const handleClick = (id, wish) => {
+  const handleWishlist = (id, wish) => {
     axios.post(`http://localhost:8080/${id}`, { wishlist: !wish }).then((res) =>
       axios.get("http://localhost:8080/").then((res) => {
         setData(res.data);
@@ -72,13 +70,24 @@ function ProductPage() {
   const handleNavigate = (id) => {
     navigate(`/productpage/${id}`);
   };
-  useEffect(() => {
-    axios.get("http://localhost:8080/tv/lth").then((res) => setData(res.data));
-  }, []);
+  const handleSortrelevance = () => {
+    axios.get("http://localhost:8080/tv").then((res) => setData(res.data));
+  };
+
+  const handleSort = (id) => {
+    axios
+      .get(`http://localhost:8080/tv/${id}`)
+      .then((res) => setData(res.data));
+  };
 
   console.log(data);
   return (
     <>
+      <HStack gap={"20px"}>
+        <Text onClick={handleSortrelevance}>Relevance</Text>
+        <Text onClick={() => handleSort("lth")}>Sort by Low to High</Text>
+        <Text onClick={() => handleSort("htl")}>Sort by High to Low</Text>
+      </HStack>
       {data.map((el, i) => (
         <Box
           key={i}
@@ -92,7 +101,7 @@ function ProductPage() {
           <Box w={"20%"}>
             <Box
               ml={"90%"}
-              onClick={() => handleClick(el._id, el.wish)}
+              onClick={() => handleWishlist(el._id, el.wish)}
               mb="10px"
             >
               <BsFillHeartFill
