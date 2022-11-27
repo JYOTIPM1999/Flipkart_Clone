@@ -44,6 +44,8 @@ import { GoLocation } from "react-icons/go";
 import Rating from "./Rating&Review";
 import Review from "./Review";
 import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import image from "../../img/videobutton.png"
 
 
 
@@ -78,6 +80,7 @@ const Details = () => {
   const [id, setId] = useState("63725feb4c2eed1d06721ab2")
 
   const toast = useToast();
+  const params = useParams()
 
   const handleWish = () => {
     setWish(!wish);
@@ -102,7 +105,7 @@ const Details = () => {
 
   useEffect(()=>{
   
-  axios.get(`http://localhost:8080/product/${id}`).then(res=>{
+  axios.get(`http://localhost:8080/tv/singlepage?id=${params.id}`).then(res=>{
   console.log(res.data)  
   setData(res.data)
   setImg(res.data.images[0])
@@ -110,26 +113,28 @@ const Details = () => {
     
   })
   },[])
-  // console.log(data.imglink)
+
+ 
   return (
     <>
-      <Box className={styles.container_u}>
-        <Box border="2px" borderColor="gray.200" className={styles.gallery_u}>
-          <Box className={styles.photolist}>
+      <Box p={"10px"} h="auto" display={"flex"} position="relative" zIndex={1}>
+        <Box w={"40%"} h="90vh" position={"sticky"} top={"10px"} display="flex" border="2px" borderColor="gray.200" >
+          <Box border={"1px solid white"} w={"15%"} h="100%" overflow={"scroll"} >
             {data?.images?.map((elem, i) => (
               <Box
                 mb={"5px"}
                 _hover={{ border: "2px", borderColor: "#2874f0" }}
-                border="2px"
-                borderColor="white"
+                border="2px solid white"
+                
                 key={i}
                 onMouseOver={() => handleChange(elem)}
               >
                 <Image
+                border={"1px solid white"}
                   m={"auto"}
                   mb={"10px"}
                   w={"50px"}
-                  src={elem.type == "img" ? elem.link : "playbutton.jpg"}
+                  src={elem.type == "img" ? elem.link : image}
                 ></Image>
               </Box>
             ))}
@@ -137,28 +142,37 @@ const Details = () => {
 
           {/* large image */}
 
-          <Box p={"10px"} className={styles.largephoto}>
+          <Box border={"1px solid white"} p={"10px"} w="85%" h={"100%"} position="relative" >
+          <Box display={"flex"} justifyContent="end" border={"1px solid white"} onClick={handleWish}  >
+              <AiFillHeart color={wish ? "red" : "gray"} size={"30px"} />
+           </Box>
+
             {vid && (
+              <Box>
               <AspectRatio mb={"10px"} W="95%" h={"390px"} ratio={1}>
                 <iframe src={img.link} title={img.type} />
               </AspectRatio>
+              </Box>
             )}
 
             {!vid && (
+              <Box border={"1px solid white"} h={"400px"} >
               <Image
                 border={"1px"}
                 borderColor="white"
-                pt={"0px"}
-                pb="30px"
-                mt={"20px"}
+                // pt={"0px"}
+                // pb="30px"
+                // mt={"20px"}
                 m={"auto"}
-               // w={img.width}          // elem.width
-                h={"400px"}
+                h="85%"
+                       
+                
                src={img?img.link:""}
               ></Image>
+              </Box>
             )}
 
-            <HStack>
+            <HStack border={"1px solid white"}>
               <Btn
                 he="50px"
                 w="50%"
@@ -175,9 +189,7 @@ const Details = () => {
               />
             </HStack>
             {/* add to wishlist */}
-            <Box onClick={handleWish} className={styles.addtowishlist}>
-              <AiFillHeart color={wish ? "red" : "gray"} size={"30px"} />
-            </Box>
+            
           </Box>
         </Box>
 
@@ -187,7 +199,7 @@ const Details = () => {
        {
 
 
-       data && <Box className={styles.details_u}>
+       data && <Box  w={"60%"} h="auto" p={"0px 5px"}>
           <VStack
             spacing={"17px"}
             p={"5px"}

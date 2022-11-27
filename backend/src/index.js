@@ -5,6 +5,7 @@ const WishList = require("./Routes/Wishlist.router");
 const compression = require("compression");
 const userRouter = require("./Routes/user.router");
 const ProductRouter = require("./Routes/product.router");
+const TvRouter = require("./Routes/tv.router");
 const TvModel = require("./Schema/tv.model");
 const ProductModel = require("./Schema/product.model");
 const UserModel = require("./Schema/user.model");
@@ -18,6 +19,7 @@ app.use(compression());
 app.use("/user", userRouter);
 app.use("/wishlist", WishList);
 app.use("/product", ProductRouter);
+app.use("/tv", TvRouter);
 
 app.get("/", async (req, res) => {
   let tv = await TvModel.find();
