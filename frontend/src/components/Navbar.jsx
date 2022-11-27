@@ -1,19 +1,27 @@
+import { Search2Icon } from "@chakra-ui/icons";
 import {
   Box,
+  Button,
   Flex,
-  Grid,
-  GridItem,
   Image,
   Input,
+  InputGroup,
+  InputRightElement,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+import { FaCartArrowDown } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <Box bg={"#2874f0"} w={"100%"} p={"5px"}>
       <Flex w={"80%"} m={"auto"} justifyContent={"space-between"}>
-        <Flex w={"55%"} gap={"20px"} alignItems={"center"}>
+        <Flex
+          w={"55%"}
+          gap={"20px"}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+        >
           <Image
             w={"15%"}
             h={"30px"}
@@ -21,7 +29,17 @@ const Navbar = () => {
               "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fk-plus_3b0baa.png"
             }
           />
-          <Input borderRadius={"none"} bg={"white"} />
+          <InputGroup bg={"white"}>
+            <InputRightElement
+              pointerEvents="none"
+              children={<Search2Icon color="white.300" />}
+            />
+            <Input
+              color={"gray"}
+              borderRadius={"0px"}
+              placeholder="Search for products, brands and more"
+            />
+          </InputGroup>
         </Flex>
         <Flex justifyContent={"space-around"} w={"45%"} alignItems={"center"}>
           <Text color={"whiteAlpha.900"} fontWeight={"bold"}>
@@ -33,9 +51,15 @@ const Navbar = () => {
           <Text color={"whiteAlpha.900"} fontWeight={"bold"}>
             More
           </Text>
-          <Text color={"whiteAlpha.900"} fontWeight={"bold"}>
+          <Button
+            _hover={"none"}
+            bg={"none"}
+            rightIcon={<FaCartArrowDown />}
+            color={"whiteAlpha.900"}
+            fontWeight={"bold"}
+          >
             Cart
-          </Text>
+          </Button>
         </Flex>
       </Flex>
     </Box>
