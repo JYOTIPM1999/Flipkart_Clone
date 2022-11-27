@@ -1,57 +1,71 @@
-import { Box } from "@chakra-ui/react";
-import { ConcludeFlip } from "./ConcludeFlip";
-import styles from "./main.module.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { MainSliderComp, MultiSliderComp } from "./SliderComp";
-import { SlideData } from "./SlideData";
-import HomeSecondHeader from "./HomeSecondHeader";
+import { Grid, GridItem, Img, Input } from '@chakra-ui/react'
+import React from 'react'
 
-export const HomePage = () => {
-  // console.log(SlideData)
+const HomePage = () => {
   return (
-    <div id={styles.mainContainerHomePage}>
-      <Box width="100%" border={"1px solid blue"}>
-        <Box
-          width={"100%"}
-          // border={"1px solid red"}
-          bgColor="#FFFFFF"
-          boxSizing="border-box"
-        >
-          <HomeSecondHeader />
-        </Box>
+    <>
+    <Grid
 
-        <Box
-          width={"100%"}
-          m="auto"
-          // border={"1px solid red"}
-          p="0px 8px 0px 8px"
-        >
-          <MainSliderComp slides={SlideData} />
-        </Box>
+  templateAreas={`
+    
+    "h1 h1 h2 h2 h2 h2 h2 h2"
+    "h1 h1 h2 h2 h2 h2 h2 h2"
+    "h1 h1 h2 h2 h2 h2 h2 h2"
+    "h1 h1 h2 h2 h2 h2 h2 h2"
+    "h5 h5 h5 h5 h5 h6 h6 h6"
+    "h5 h5 h5 h5 h5 h6 h6 h6"
+    "h5 h5 h5 h5 h5 h6 h6 h6"
+    "h7 h7 h7 h8 h8 h8 h8 h8"
+    "h7 h7 h7 h8 h8 h8 h8 h8"
+    "h7 h7 h7 h8 h8 h8 h8 h8"
 
-        <Box
-          width={"100%"}
-          m="auto"
-          // border={"1px solid red"}
-          p="0px 8px 0px 8px"
-        >
-          <MultiSliderComp slides={SlideData} />
-        </Box>
+   
+   
+  
+  
+  `}
+  gridTemplateRows={"repeat(10,1fr)"}
+  gridTemplateColumns="repeat(8, 1fr)"
+  h='600px'
+  gap='2'
+  color='blackAlpha.700'
+  fontWeight='bold'
+>
+<GridItem  bg='orange' area={'h1'}>
+  one
+  </GridItem>
 
-        <Box
-          width={"100%"}
-          mb="50px"
-          // border={"1px solid red"}
-        >
-          <ConcludeFlip />
-        </Box>
+  <GridItem  bg='blue.400' area={'h2'}>
+  
+  </GridItem>
 
-        <Box
-          width={"100%"}
-          //  border="1px solid red"
-        ></Box>
-      </Box>
-    </div>
-  );
-};
+ 
+
+  <GridItem  bg='yellow' area={'h5'}>
+  five
+  </GridItem>
+
+  <GridItem  bg='gray' area={'h6'}>
+  six
+  </GridItem> 
+
+
+  <GridItem  bg='red' area={'h7'}>
+  seven
+  </GridItem>
+
+  <GridItem  bg='gray' area={'h8'}>
+  eight
+  </GridItem> 
+
+
+
+  
+
+ 
+</Grid>
+    </>
+  )
+}
+
+export default HomePage
