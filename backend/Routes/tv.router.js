@@ -2,6 +2,17 @@ const express = require("express");
 const TvModel = require("../Schema/tv.model");
 const app = express.Router();
 
+app.post("/search", async (req, res) => {
+
+  const { str } = req.body;
+  if(str.length == 0)
+  {
+    return res.send([])
+  }
+  const result = await TvModel.find({ name: { $regex: str, $options: "$i" } });
+  res.send(result);
+});
+
 app.get("/", async (req, res) => {
   const tv = await TvModel.find();
   res.send(tv);
