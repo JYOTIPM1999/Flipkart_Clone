@@ -118,6 +118,23 @@ const Signup = ({isOpen, onOpen, onClose}) => {
     });
   };
 
+  function handleUploadimage() {
+    var myWidget = window.cloudinary.createUploadWidget(
+      {
+        cloudName: "dknaigwrs",
+        uploadPreset: "flipkart-user",
+      },
+      (error, result) => {
+        if (!error && result && result.event === "success") {
+          console.log("Done! Here is the image info: ", result.info);
+        }
+      }
+    );
+    // open widget
+    myWidget.open()
+  }
+
+
   return (
     <>
       {/* <Button onClick={onOpen}>SignUp Modal</Button> */}
@@ -173,6 +190,7 @@ const Signup = ({isOpen, onOpen, onClose}) => {
                   name="password"
                   placeholder="Password"
                 />
+                <Button onClick={handleUploadimage} bg="#fb641b" color="white" borderRadius="none" mt={2} fontSize="12.5px"  >Upload picture</Button>
                 <Text fontSize={"12px"}>
                   By continuing, you agree to Flipkart's
                   <span style={{ color: "#2874f0" }}> Terms of Use</span> and
@@ -205,7 +223,7 @@ const Signup = ({isOpen, onOpen, onClose}) => {
                   Or
                 </Text>
                 <Button
-                  mt={4}
+                  mt={1}
                   bg={"#2874f0"}
                   boxShadow={
                     "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
