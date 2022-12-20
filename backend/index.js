@@ -34,7 +34,7 @@ app.post("/:id", async (req, res) => {
   );
   res.send(update);
 });
-mongoose.set('strictQuery', true);
+mongoose.set("strictQuery", true);
 mongoose
   .connect(
     "mongodb+srv://FLIPKART:project@cluster0.aycyzrd.mongodb.net/Flipkart"

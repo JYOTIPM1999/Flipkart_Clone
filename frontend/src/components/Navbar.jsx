@@ -32,6 +32,7 @@ import Signup from "./Signup";
 
 const Navbar = () => {
   const [data,setData] = useState([])
+  const [sta,setSta] = useState(true)
   const navigate = useNavigate()
   const { isOpen, onOpen, onClose } = useDisclosure()
  
@@ -53,6 +54,9 @@ const Navbar = () => {
 
   const handleNavigate = (id) => {
     // navigate("/")
+ 
+  //  setTimeout(()=>navigate(`/productpage/${id}`),0) 
+   
 
     window.open(`/productpage/${id}`)
      
