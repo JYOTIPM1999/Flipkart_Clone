@@ -31,7 +31,7 @@ function App() {
         <Link to={"productpage"}>Product page</Link>
       </Button> */}
       {/* <Signup /> */}
-      <UploadWidget/>
+    
     </div>
   );
 }

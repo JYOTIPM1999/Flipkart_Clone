@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt");
 const app = express.Router();
 
 app.post("/signup", async (req, res) => {
-  const { email, name, password } = req.body;
+  const { email, name, password,pic } = req.body;
 
   const existingemail = await UserModel.findOne({ email });
 
@@ -14,7 +14,7 @@ app.post("/signup", async (req, res) => {
   }
 
   bcrypt.hash(password, 5, async function (err, hash) {
-    let user = new UserModel({ email, name, password: hash });
+    let user = new UserModel({ email, name, password: hash ,pic});
     await user.save();
     res.send("success");
   });

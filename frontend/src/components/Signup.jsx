@@ -25,7 +25,7 @@ import axios from "axios";
 const Signup = ({isOpen, onOpen, onClose}) => {
   // const { isOpen, onOpen, onClose } = useDisclosure();
   const toast = useToast();
-  const [signup, setSignup] = useState({ name: "", email: "", password: "" });
+  const [signup, setSignup] = useState({ name: "", email: "", password: "" , pic:"https://res.cloudinary.com/dknaigwrs/image/upload/v1667843094/zzdgggy3cuzapxbeke13.png" });
   const [signin, setSignin] = useState({ email: "", password: "" });
 
   const [open, setOpen] = useState(true);
@@ -49,6 +49,7 @@ const Signup = ({isOpen, onOpen, onClose}) => {
         .post("http://localhost:8080/user/signup", signup)
         .then((res) => {
           if (res.data === "success") {
+            console.log(signup)
             setOpen(false);
             setSignup("");
           } else {
@@ -126,7 +127,8 @@ const Signup = ({isOpen, onOpen, onClose}) => {
       },
       (error, result) => {
         if (!error && result && result.event === "success") {
-          console.log("Done! Here is the image info: ", result.info);
+          console.log("Done! Here is the image info: ", result.info.secure_url);
+          setSignup({...signup,pic:result.info.secure_url})
         }
       }
     );
