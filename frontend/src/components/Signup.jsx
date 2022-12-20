@@ -22,8 +22,8 @@ import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
 
-const Signup = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+const Signup = ({isOpen, onOpen, onClose}) => {
+  // const { isOpen, onOpen, onClose } = useDisclosure();
   const toast = useToast();
   const [signup, setSignup] = useState({ name: "", email: "", password: "" });
   const [signin, setSignin] = useState({ email: "", password: "" });
@@ -43,8 +43,9 @@ const Signup = () => {
         duration: 5000,
         isClosable: true,
       });
-    } else {
-      await axios
+    } 
+    else {
+        axios
         .post("http://localhost:8080/user/signup", signup)
         .then((res) => {
           if (res.data === "success") {
@@ -91,7 +92,11 @@ const Signup = () => {
           isClosable: true,
         });
       }
-    });
+    }
+
+    
+    );
+    setSignin({ email: "", password: "" })
   };
 
   const handleSignup = (e) => {
@@ -115,7 +120,7 @@ const Signup = () => {
 
   return (
     <>
-      <Button onClick={onOpen}>SignUp Modal</Button>
+      {/* <Button onClick={onOpen}>SignUp Modal</Button> */}
       {open ? (
         <Modal onClose={onClose} size="2xl" isOpen={isOpen}>
           <ModalOverlay />
@@ -178,6 +183,7 @@ const Signup = () => {
                   w={"100%"}
                   bg="#fb641b"
                   color={"whiteAlpha.900"}
+                  borderRadius="none"
                   type="submit"
                   _hover={"none"}
                   onClick={handleSubmitSignup}
@@ -189,6 +195,8 @@ const Signup = () => {
                   w={"100%"}
                   mt={5}
                   color={"#2874f0"}
+                  borderRadius="none"
+
                   onClick={handleClickOpen}
                 >
                   Existing User? Log in
@@ -202,11 +210,14 @@ const Signup = () => {
                   boxShadow={
                     "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
                   }
+                  borderRadius="none"
+
                   _hover={"none"}
                 >
                   <Image
-                    w="28%"
+                    w="23%"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+                    
                   />
                 </Button>
               </FormControl>
@@ -225,8 +236,10 @@ const Signup = () => {
                 p={"2px"}
                 bg={"#2874f0"}
                 w={"40%"}
+               
+                padding={6}
               >
-                <VStack align={"left"}>
+                <VStack align={"left"}  >
                   <Text fontSize={"300%"} color={"#ffffff"} fontWeight="500">
                     Login
                   </Text>
@@ -235,7 +248,7 @@ const Signup = () => {
                   </Text>
                 </VStack>
 
-                <Img src="loginimage.png" />
+                <Img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" />
               </Box>
 
               <Box
@@ -280,6 +293,8 @@ const Signup = () => {
                       bg={"#fb641b"}
                       w="100%"
                       color="white"
+                      fontSize={15}
+                      borderRadius={"none"}
                       onClick={handleSubmitSignin}
                     >
                       Login
@@ -289,12 +304,14 @@ const Signup = () => {
                       color={"white"}
                       bg={"#2874f0"}
                       w="100%"
+                      borderRadius={"none"}
+                      fontSize={14}
                       leftIcon={
                         <FcGoogle
                           size={"25px"}
                           style={{
                             backgroundColor: "white",
-                            borderRadius: "2px",
+                            borderRadius: "none",
                             width: "30px",
                           }}
                         />

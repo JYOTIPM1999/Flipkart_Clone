@@ -1,7 +1,10 @@
 import { CheckIcon, SearchIcon } from "@chakra-ui/icons";
 import {
   Box,
+  Button,
   Flex,
+  FormControl,
+  FormLabel,
   Grid,
   GridItem,
   Heading,
@@ -10,16 +13,28 @@ import {
   Input,
   InputGroup,
   InputRightElement,
+  Modal,
+  ModalCloseButton,
+  ModalContent,
+  ModalOverlay,
   Text,
+  useDisclosure,
+  useToast,
+  VStack,
 } from "@chakra-ui/react";
 import axios from "axios";
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+import Signup from "./Signup";
+
 
 const Navbar = () => {
   const [data,setData] = useState([])
   const navigate = useNavigate()
+  const { isOpen, onOpen, onClose } = useDisclosure()
+ 
   
 
 
@@ -37,20 +52,31 @@ const Navbar = () => {
   }
 
   const handleNavigate = (id) => {
-    navigate(`/productpage/${id}`);
+    // navigate("/")
+
+    window.open(`/productpage/${id}`)
+     
+    
+     
   };
 
+ 
   return (
     <>
+    <Signup isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
     <Box bg={"#2874f0"} w={"100%"} p={"5px"} onClick={handlehidesearch} >
       <Flex w={"80%"} m={"auto"} justifyContent={"space-between"}  >
         <Flex w={"55%"} gap={"20px"} alignItems={"center"}>
           <Image
             w={"15%"}
             h={"30px"}
+            cursor="pointer"
+            onClick={()=>navigate("/")}
+
             src={
               "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fk-plus_3b0baa.png"
             }
+            
           />
           <InputGroup>
           <Input onChange={handleChange} fontWeight={500} fontSize="14px" borderRadius={"none"} bg={"white"} />
@@ -59,9 +85,9 @@ const Navbar = () => {
           
         </Flex>
         <Flex justifyContent={"space-around"} w={"45%"} alignItems={"center"}>
-          <Text color={"whiteAlpha.900"} fontWeight={"bold"}>
-            Jyoti Prakash
-          </Text>
+          <Button onClick={onOpen}  color={"rgb(40,116,240)"} fontSize="14px" borderRadius={"none"} w="100px" h="30px" >
+            Login
+          </Button>
           <Text color={"whiteAlpha.900"} fontWeight={"bold"}>
             Become a seller
           </Text>
@@ -89,6 +115,11 @@ const Navbar = () => {
     </Box>}
     </Box>
     
+    
+     
+    
+   
+
    
     </>
   );
