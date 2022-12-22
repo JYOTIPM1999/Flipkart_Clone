@@ -1,4 +1,5 @@
 import { Button } from "@chakra-ui/react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -15,7 +16,14 @@ import Details from "./pages/SinglePage/Details";
 import ProductsMerge from "./pages/TVPage/ProductsMerge";
 import { AllRoutes } from "./Routes/AllRoutes";
 
+
+
 function App() {
+
+  
+
+ 
+
   return (
     <div className="App">
       <Navbar />
