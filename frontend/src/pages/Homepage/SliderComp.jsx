@@ -17,7 +17,7 @@ export function MainSliderComp({ slides }) {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <Box mt="100px" border={"1px solid green"} height="280px">
+    <Box mt="50px" border={"1px solid green"} height="280px">
       <Slider {...settings}>
         {slides.map((el, i) => {
           return (
@@ -45,7 +45,7 @@ export function MultiSliderComp({ slides }) {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <Box mt="100px" border={"1px solid green"}>
+    <Box mt="10px" boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"  >
       <Slider {...settings}>
         {slides.map((el, i) => {
           return (
@@ -71,9 +71,9 @@ function SampleNextArrow(props) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "#2874f0",
-        height: "100px",
-        width: "50px",
+        background: "rgb(40,116,240,.8)",
+        height: "50px",
+        width: "30px",
         zIndex: "1",
         position: "absolute",
         right: "0px",
@@ -95,9 +95,9 @@ function SamplePrevArrow(props) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "#2874f0",
-        height: "100px",
-        width: "50px",
+        background: "rgb(40,116,240,.8)",
+        height: "50px",
+        width: "30px",
         zIndex: "1",
         position: "absolute",
         left: "0px",
