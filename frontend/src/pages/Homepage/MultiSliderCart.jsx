@@ -8,7 +8,7 @@ function MultiSliderCart({ data }) {
       <Image src={data.img}  />
       </Box>
       <Text fontWeight={500} >{data.name}</Text>
-      <Text color={"rgb(133,151,66)"} >{data.offer}</Text>
+      <Text color={"green"} >{data.offer}</Text>
       
     </VStack>
   );

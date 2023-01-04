@@ -353,6 +353,7 @@ const Signup = ({isOpen, onOpen, onClose}) => {
                   fontSize={"160%"}
                   color={"#2874f0"}
                   onClick={handleClickOpen}
+                  cursor="pointer"
                 >
                   New to Flipkart? Create an account
                 </Box>
