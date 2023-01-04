@@ -171,26 +171,32 @@ const Signup = ({isOpen, onOpen, onClose}) => {
             </Box>
             <Box w={"60%"} p={"20px"} bg={"white"}>
               <FormControl isRequired>
-                <FormLabel>Name</FormLabel>
+             
                 <Input
                   onChange={handleSignup}
                   value={signup.name}
                   name="name"
-                  placeholder="Name"
+                  placeholder="name"
+                  variant="flushed"
+                  mb={3}
                 />
-                <FormLabel>Email</FormLabel>
+               
                 <Input
                   onChange={handleSignup}
                   value={signup.email}
                   name="email"
-                  placeholder="Email"
+                  placeholder="email"
+                  variant="flushed"
+                  mb={3}
                 />
-                <FormLabel>Password</FormLabel>
+              
                 <Input
                   onChange={handleSignup}
                   value={signup.password}
                   name="password"
-                  placeholder="Password"
+                  placeholder="password"
+                  variant="flushed"
+                  mb={3}
                 />
                 <Button onClick={handleUploadimage} bg="#fb641b" color="white" borderRadius="none" mt={2} fontSize="12.5px"  >Upload picture</Button>
                 <Text fontSize={"12px"}>
