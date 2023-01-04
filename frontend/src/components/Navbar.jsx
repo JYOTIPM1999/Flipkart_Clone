@@ -68,7 +68,7 @@ const Navbar = () => {
   return (
     <>
     <Signup isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
-    <Box bg={"#2874f0"} w={"100%"} p={"5px"} onClick={handlehidesearch} >
+    <Box position={"fixed"} zIndex="2" bg={"#2874f0"} w={"100%"} p={"5px"} onClick={handlehidesearch} >
       <Flex w={"80%"} m={"auto"} justifyContent={"space-between"}  >
         <Flex w={"55%"} gap={"20px"} alignItems={"center"}>
           <Image

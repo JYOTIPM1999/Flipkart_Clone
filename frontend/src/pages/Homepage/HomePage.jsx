@@ -23,12 +23,14 @@ const HomePage = () => {
 
   return (
     <>
+      <Box h="51px"></Box>
       <Box
       p={4}
 
       display="flex"
       boxShadow={"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}
-      mb="20px"
+      mb="10px"
+      
       justifyContent="space-around"
       bg="white"
       >
