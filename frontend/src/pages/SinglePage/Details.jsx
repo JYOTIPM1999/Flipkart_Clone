@@ -114,7 +114,7 @@ const Details = () => {
 
   return (
     <>
-      <Box p={"10px"} h="auto" display={"flex"} position="relative" zIndex={1}>
+      <Box bg="white" p={"10px"} h="auto" display={"flex"} position="relative" zIndex={1}>
         <Box
           w={"40%"}
           h="90vh"

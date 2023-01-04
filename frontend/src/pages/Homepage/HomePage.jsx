@@ -23,7 +23,6 @@ const HomePage = () => {
 
   return (
     <>
-      <Box h="51px"></Box>
       <Box
       p={4}
 
@@ -46,6 +45,7 @@ const HomePage = () => {
      <Carousel/>
 
      <MultiSliderComp slides={SlideData}/>
+    
     </>
   )
 }
