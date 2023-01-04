@@ -83,7 +83,7 @@ function ProductPage() {
   console.log(data);
   return (
     <>
-      <HStack gap={"20px"}>
+      <HStack gap={"20px"} bg="white" >
         <Text onClick={handleSortrelevance}>Relevance</Text>
         <Text onClick={() => handleSort("lth")}>Sort by Low to High</Text>
         <Text onClick={() => handleSort("htl")}>Sort by High to Low</Text>
@@ -91,12 +91,16 @@ function ProductPage() {
       {data.map((el, i) => (
         <Box
           key={i}
-          border="1px "
-          borderColor={"gray.300"}
+          // border="1px "
+          // borderColor={"gray"}
+          
           h="270px"
           display="flex"
           gap={"10px"}
           padding={"20px 20px "}
+          bg="white"
+          mt="2"
+          mb="2"
         >
           <Box w={"20%"}>
             <Box

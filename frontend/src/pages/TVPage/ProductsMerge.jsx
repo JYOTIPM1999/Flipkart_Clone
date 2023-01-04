@@ -6,7 +6,7 @@ import SortingTv from "./SortingTV";
 
 function ProductsMerge() {
   return (
-    <Box m="10px" display="flex" gap="1%">
+    <Box m="10px" display="flex" gap="1%"  >
       <Box w="18%">
         <SortingTv />
       </Box>
@@ -17,7 +17,7 @@ function ProductsMerge() {
         border={"1px"}
         borderColor={"gray.300"}
       >
-        <Breadcrumbs />
+        <Breadcrumbs  />
         <ProductPage />
       </Box>
     </Box>
