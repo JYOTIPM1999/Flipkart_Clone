@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
@@ -26,7 +26,7 @@ function App() {
  
 
   return (
-    <div className="App">
+    <Box bg="gray.300" className="App">
       <Navbar />
       <AllRoutes />
       {/* <HomePage/> */}
@@ -42,7 +42,7 @@ function App() {
       {/* <Signup /> */}
       
     
-    </div>
+    </Box>
   );
 }
 

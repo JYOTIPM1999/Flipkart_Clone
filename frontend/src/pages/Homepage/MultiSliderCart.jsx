@@ -3,10 +3,13 @@ import React from "react";
 
 function MultiSliderCart({ data }) {
   return (
-    <VStack height={"366px"} justifyContent="center" alignItems={"center"}>
-      <Image src={data.img} height="60%" width={"60%"} />
-      <Text>{data.name}</Text>
-      <Text>{data.offer}</Text>
+    <VStack height={"310px"}  alignItems="center"justifyContent={"center"} bg="white" >
+      <Box  h="220px" display={"flex"} alignItems="center"justifyContent={"center"} >
+      <Image src={data.img}  />
+      </Box>
+      <Text fontWeight={500} >{data.name}</Text>
+      <Text color={"rgb(133,151,66)"} >{data.offer}</Text>
+      
     </VStack>
   );
 }
