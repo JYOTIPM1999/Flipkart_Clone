@@ -7,7 +7,7 @@ import { MainSliderComp, MultiSliderComp } from "./SliderComp";
 import { SlideData } from "./SlideData";
 import HomeSecondHeader from "./HomeSecondHeader";
 
-export const HomePage = () => {
+export const Ho = () => {
   // console.log(SlideData)
   return (
     <div id={styles.mainContainerHomePage}>
@@ -27,7 +27,7 @@ export const HomePage = () => {
           // border={"1px solid red"}
           p="0px 8px 0px 8px"
         >
-          <MainSliderComp slides={SlideData} />
+          {/* <MainSliderComp slides={SlideData} /> */}
         </Box>
 
         <Box
@@ -44,7 +44,7 @@ export const HomePage = () => {
           mb="50px"
           // border={"1px solid red"}
         >
-          <ConcludeFlip />
+          {/* <ConcludeFlip /> */}
         </Box>
 
         <Box

@@ -8,6 +8,7 @@ import CloudinaryUploadWidget from "./components/UploadWidget";
 import UploadWidget from "./components/UploadWidget";
 
 import CartMerge from "./pages/CartPage/CartMerge";
+import { Ho } from "./pages/Homepage/Aman";
 import Footer from "./pages/Homepage/Footer";
 import HomePage from "./pages/Homepage/HomePage";
 
@@ -39,6 +40,7 @@ function App() {
         <Link to={"productpage"}>Product page</Link>
       </Button> */}
       {/* <Signup /> */}
+      
     
     </div>
   );
