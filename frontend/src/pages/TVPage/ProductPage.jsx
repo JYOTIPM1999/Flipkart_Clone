@@ -49,12 +49,12 @@ function ProductPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:8080/tv").then((res) => setData(res.data));
+    axios.get("http://localhost:8090/tv").then((res) => setData(res.data));
   }, []);
 
   const handleWishlist = (id, wish) => {
-    axios.post(`http://localhost:8080/${id}`, { wishlist: !wish }).then((res) =>
-      axios.get("http://localhost:8080/").then((res) => {
+    axios.post(`http://localhost:8090/${id}`, { wishlist: !wish }).then((res) =>
+      axios.get("http://localhost:8090/").then((res) => {
         setData(res.data);
       })
     );
@@ -71,19 +71,19 @@ function ProductPage() {
     navigate(`/productpage/${id}`);
   };
   const handleSortrelevance = () => {
-    axios.get("http://localhost:8080/tv").then((res) => setData(res.data));
+    axios.get("http://localhost:8090/tv").then((res) => setData(res.data));
   };
 
   const handleSort = (id) => {
     axios
-      .get(`http://localhost:8080/tv/${id}`)
+      .get(`http://localhost:8090/tv/${id}`)
       .then((res) => setData(res.data));
   };
 
   console.log(data);
   return (
     <>
-      <HStack gap={"20px"} bg="white" >
+      <HStack gap={"20px"} bg="white">
         <Text onClick={handleSortrelevance}>Relevance</Text>
         <Text onClick={() => handleSort("lth")}>Sort by Low to High</Text>
         <Text onClick={() => handleSort("htl")}>Sort by High to Low</Text>
@@ -92,8 +92,8 @@ function ProductPage() {
         <Box
           key={i}
           // border="1px "
-          // 
-          
+          //
+
           h="270px"
           display="flex"
           gap={"10px"}
@@ -101,7 +101,6 @@ function ProductPage() {
           // bg="white"
           borderBottom="1px"
           borderColor={"gray.300"}
-          
           mt="2"
           mb="2"
         >

@@ -40,7 +40,7 @@ mongoose
     "mongodb+srv://FLIPKART:project@cluster0.aycyzrd.mongodb.net/Flipkart"
   )
   .then(() => {
-    app.listen(8080, (req, res) => {
-      console.log("you sever started on http://localhost:8080");
+    app.listen(8090, (req, res) => {
+      console.log("you sever started on http://localhost:8090");
     });
   });

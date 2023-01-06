@@ -46,7 +46,7 @@ const Signup = ({isOpen, onOpen, onClose}) => {
     } 
     else {
         axios
-        .post("http://localhost:8080/user/signup", signup)
+        .post("http://localhost:8090/user/signup", signup)
         .then((res) => {
           if (res.data === "success") {
             console.log(signup)
@@ -67,7 +67,7 @@ const Signup = ({isOpen, onOpen, onClose}) => {
   };
 
   const handleSubmitSignin = () => {
-    axios.post("http://localhost:8080/user/signin", signin).then((res) => {
+    axios.post("http://localhost:8090/user/signin", signin).then((res) => {
       if (res.data === "user not found") {
         toast({
           title: "User not found....",

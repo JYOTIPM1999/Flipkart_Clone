@@ -104,7 +104,7 @@ const Details = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/tv/singlepage?id=${params.id}`)
+      .get(`http://localhost:8090/tv/singlepage?id=${params.id}`)
       .then((res) => {
         console.log(res.data);
         setData(res.data);
