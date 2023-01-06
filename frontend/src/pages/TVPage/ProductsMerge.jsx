@@ -12,10 +12,11 @@ function ProductsMerge() {
       </Box>
       <Box
         w="81%"
-        backgroundColor={"offwhite"}
+        // backgroundColor={"offwhite"}
+        bg={"white"}
         padding="10px"
-        border={"1px"}
-        borderColor={"gray.300"}
+        // border={"1px"}
+        // borderColor={"green.300"}
       >
         <Breadcrumbs  />
         <ProductPage />

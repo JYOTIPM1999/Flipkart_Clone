@@ -26,21 +26,10 @@ function App() {
  
 
   return (
-    <Box bg="gray.300" className="App">
+    <Box bg="gray.200" className="App">
       <Navbar />
       <AllRoutes />
-      {/* <HomePage/> */}
-    
-      {/* <ProductsMerge /> */}
-      {/* <CartMerge /> */}
-      {/* <Details />  */}
-      {/* <Footer /> */}
-      {/* <Signup /> */}
-      {/* <Button>
-        <Link to={"productpage"}>Product page</Link>
-      </Button> */}
-      {/* <Signup /> */}
-      
+      <Footer/>
     
     </Box>
   );

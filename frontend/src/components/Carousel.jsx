@@ -13,7 +13,7 @@ const Carousel = () => {
     slidesToScroll: 1,
     autoplay:true,
     arrows:false,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 2500,
       cssEase: "linear"
   };
 
@@ -38,7 +38,7 @@ const Carousel = () => {
             <Img src='slick5.png'h={275} />
           </Box>
           <Box border="1px solid black" h="auto">
-            <Img src='slick6.png'h={275} />
+            <Img src='slick7.png'h={275} />
           </Box>
         </Slider>
     

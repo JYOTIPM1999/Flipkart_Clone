@@ -2,7 +2,7 @@ import { Box, Grid, GridItem, Img, Input, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Carousel from '../../components/Carousel'
-import { SlideData } from './SlideData'
+import { SlideData, slideData2 } from './SlideData'
 import { MultiSliderComp } from './SliderComp'
 
 const HomePage = () => {
@@ -45,6 +45,7 @@ const HomePage = () => {
      <Carousel/>
 
      <MultiSliderComp slides={SlideData}/>
+     <MultiSliderComp slides={slideData2}/>
     
     </>
   )
