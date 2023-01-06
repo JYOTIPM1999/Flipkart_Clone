@@ -63,12 +63,12 @@ const Navbar = () => {
     
      
   };
-
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
  
   return (
     <>
     <Signup isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
-    <Box position={"fixed"} zIndex="2" bg={"#2874f0"} w={"100%"} p={"5px"} onClick={handlehidesearch} >
+    <Box position={"fixed"} zIndex="2" bg={"#2874f0"} boxShadow="rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px" w={"100%"} p={"5px"} onClick={handlehidesearch} >
       <Flex w={"80%"} m={"auto"} justifyContent={"space-between"}  >
         <Flex w={"55%"} gap={"20px"} alignItems={"center"}>
           <Image

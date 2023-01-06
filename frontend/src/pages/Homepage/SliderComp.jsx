@@ -7,9 +7,9 @@ import MultiSliderCart from "./MultiSliderCart";
 
 export function MainSliderComp({ slides }) {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 100,
+    speed: 400,
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -35,7 +35,7 @@ export function MainSliderComp({ slides }) {
 
 export function MultiSliderComp({ slides }) {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 100,
     arrows: true,

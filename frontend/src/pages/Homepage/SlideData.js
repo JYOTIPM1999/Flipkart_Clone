@@ -1,3 +1,45 @@
+export const slideData2 = [
+  {
+    img:"https://rukminim1.flixcart.com/image/200/200/ksaoqkw0/garden-tool-set/j/y/c/garden-tool-set-garden-tool-kit-3-tools-trowel-weeder-and-hand-original-imag5w65fsc32zsv.jpeg?q=70",
+    name:"Garden tools",
+    offer:"From ₹50"
+  },
+  {
+    img:"https://rukminim1.flixcart.com/image/200/200/l4x2rgw0/mat/y/m/e/small-anti-skid-doormats-for-bathroom-entrance-and-bedrooms-original-imagfppfexh9ns3r.jpeg?q=70",
+    name:"Door Mats",
+    offer:"From ₹60"
+  },
+  {
+    img:"https://rukminim1.flixcart.com/image/200/200/khmbafk0-0/level/x/y/5/10-0-601-072-hf0-bosch-original-imafxh9vsdbmww66.jpeg?q=70",
+    name:"Measuring Tapes ",
+    offer:"From ₹400"
+  },
+  {
+    img:"https://rukminim1.flixcart.com/image/200/200/ked56kw0/battery/nimh/z/v/e/duracell-plus-a-a-4-pcs-1300-mah-original-imafv2ff3mbzj6gg.jpeg?q=70",
+    name:"Cell",
+    offer:"From ₹150"
+  },
+  {
+    img:"https://rukminim1.flixcart.com/image/200/200/l1jmc280/mattress-protector/w/g/e/shmp723612gy-sleepyhead-original-imagd37rhpjqngzk.jpeg?q=70",
+    name:"Mattress",
+    offer:"From ₹190"
+  },
+  {
+    img:"https://rukminim1.flixcart.com/image/200/200/krtjgcw0/showpiece-figurine/q/8/d/sg-royalbox-original-imag5gy2rxubzkgq.jpeg?q=70",
+    name:"Showpieces",
+    offer:"From ₹90"
+  },
+  {
+    img:"https://rukminim1.flixcart.com/image/200/200/kqwobrk0/spray-tip/2/t/h/brass-nozzle-water-spray-gun-water-jet-hose-nozzles-hose-pipe-original-imag4tyraqzzwwfg.jpeg?q=70",
+    name:"sprayers",
+    offer:"From ₹299"
+  },
+  {
+    img:"https://rukminim1.flixcart.com/image/200/200/kz8qsnk0/mosquito-net/h/1/p/double-bed-polyester-adults-blue-mosquito-net-double-bed-nets-original-imagbagfgnfvnquj.jpeg?q=70",
+    name:"Mosquito nets",
+    offer:"From ₹300"
+  },
+]
 export const SlideData = [
   {
     img: "https://rukminim1.flixcart.com/image/200/200/kebpqq80/musical-keyboard/j/h/h/37-keys-nj-fashion-original-imafvyhrjeuah2ge.jpeg?q=70",

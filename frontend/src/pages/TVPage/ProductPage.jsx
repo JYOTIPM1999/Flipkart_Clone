@@ -92,13 +92,16 @@ function ProductPage() {
         <Box
           key={i}
           // border="1px "
-          // borderColor={"gray"}
+          // 
           
           h="270px"
           display="flex"
           gap={"10px"}
           padding={"20px 20px "}
-          bg="white"
+          // bg="white"
+          borderBottom="1px"
+          borderColor={"gray.300"}
+          
           mt="2"
           mb="2"
         >
