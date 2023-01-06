@@ -102,19 +102,19 @@
 
 
 /* width */
-::-webkit-scrollbar {
-    width: 5px;
+ ::-webkit-scrollbar {
+    width: 7px;
     
 
   }
-  
+   
   
    
   /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #377ef1; 
+   ::-webkit-scrollbar-thumb {
+    background: gray; 
     height: 10px;
-  }
+  } 
 
 
   /* Rating component */

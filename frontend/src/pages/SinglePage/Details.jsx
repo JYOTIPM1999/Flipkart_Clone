@@ -76,7 +76,7 @@ const Details = () => {
   const [vid, setVid] = useState(false);
 
   const [wish, setWish] = useState(false);
-  const [id, setId] = useState("63725feb4c2eed1d06721ab2");
+  const [id, setId] = useState("");
 
   const toast = useToast();
   const params = useParams();
@@ -114,7 +114,7 @@ const Details = () => {
 
   return (
     <>
-      <Box p={"10px"} h="auto" display={"flex"} position="relative" zIndex={1}>
+      <Box bg="white" p={"10px"} h="auto" display={"flex"} position="relative" zIndex={1}>
         <Box
           w={"40%"}
           h="90vh"
@@ -169,7 +169,7 @@ const Details = () => {
 
             {vid && (
               <Box>
-                <AspectRatio mb={"10px"} W="95%" h={"390px"} ratio={1}>
+                <AspectRatio mb={"10px"} w="95%" h={"390px"} ratio={1}>
                   <iframe src={img.link} title={img.type} />
                 </AspectRatio>
               </Box>
