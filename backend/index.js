@@ -41,6 +41,6 @@ mongoose
   )
   .then(() => {
     app.listen(8090, (req, res) => {
-      console.log("you sever started on http://localhost:8090");
+      console.log("Server started on http://localhost:8090");
     });
   });
